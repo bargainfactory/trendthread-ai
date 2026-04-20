@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useCart } from "@/lib/cart-context";
 
 export default function CartDrawer() {
@@ -14,6 +15,7 @@ export default function CartDrawer() {
     totalItems,
     totalPrice,
   } = useCart();
+  const t = useTranslations("Cart");
 
   return (
     <AnimatePresence>
@@ -39,7 +41,7 @@ export default function CartDrawer() {
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-surface-border">
               <div className="flex items-center gap-3">
-                <h2 className="text-xl font-bold text-white">Your Cart</h2>
+                <h2 className="text-xl font-bold text-white">{t("yourCart")}</h2>
                 <span className="px-2 py-0.5 rounded-full bg-neon-purple/20 text-neon-purple text-sm font-semibold">
                   {totalItems}
                 </span>
@@ -47,7 +49,7 @@ export default function CartDrawer() {
               <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 text-gray-400 hover:text-white transition-colors"
-                aria-label="Close cart"
+                aria-label={t("closeCart")}
               >
                 <svg
                   className="w-6 h-6"
@@ -71,10 +73,10 @@ export default function CartDrawer() {
                 <div className="text-center py-16">
                   <span className="text-5xl block mb-4">🛒</span>
                   <p className="text-gray-400 text-lg mb-2">
-                    Your cart is empty
+                    {t("emptyTitle")}
                   </p>
                   <p className="text-gray-500 text-sm">
-                    Start adding some fire designs!
+                    {t("emptySubtext")}
                   </p>
                 </div>
               ) : (
@@ -99,7 +101,7 @@ export default function CartDrawer() {
                         {item.product.title}
                       </h3>
                       <p className="text-sm text-gray-400">
-                        by {item.product.creator}
+                        {t("by")} {item.product.creator}
                       </p>
                       <div className="flex items-center justify-between mt-2">
                         <div className="flex items-center gap-2">
@@ -138,7 +140,7 @@ export default function CartDrawer() {
                     <button
                       onClick={() => removeItem(item.product.id)}
                       className="text-gray-500 hover:text-red-400 transition-colors self-start"
-                      aria-label="Remove item"
+                      aria-label={t("removeItem")}
                     >
                       <svg
                         className="w-4 h-4"
@@ -163,28 +165,26 @@ export default function CartDrawer() {
             {items.length > 0 && (
               <div className="p-6 border-t border-surface-border space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-400">Subtotal</span>
+                  <span className="text-gray-400">{t("subtotal")}</span>
                   <span className="text-xl font-bold text-white">
                     ${totalPrice.toFixed(2)}
                   </span>
                 </div>
                 <p className="text-xs text-gray-500">
-                  Shipping calculated at checkout
+                  {t("shippingNote")}
                 </p>
-                {/* Shopify Buy Button integration point */}
-                {/* data-shopify-buy-button data-shop="trendthread-ai.myshopify.com" */}
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full py-3 rounded-xl bg-gradient-to-r from-neon-purple to-neon-pink text-white font-bold text-lg hover:shadow-lg hover:shadow-purple-500/25 transition-shadow"
                 >
-                  Checkout
+                  {t("checkout")}
                 </motion.button>
                 <button
                   onClick={clearCart}
                   className="w-full py-2 text-sm text-gray-400 hover:text-red-400 transition-colors"
                 >
-                  Clear Cart
+                  {t("clearCart")}
                 </button>
               </div>
             )}

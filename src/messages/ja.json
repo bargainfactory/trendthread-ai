@@ -1,0 +1,457 @@
+{
+  "Navbar": {
+    "home": "ホーム",
+    "collections": "コレクション",
+    "shop": "ショップ",
+    "designStudio": "デザインスタジオ",
+    "howItWorks": "使い方",
+    "creators": "クリエイター",
+    "pricing": "料金プラン",
+    "startCreating": "作成を始める",
+    "openCart": "カートを開く",
+    "toggleMenu": "メニューを開く"
+  },
+  "Hero": {
+    "badge": "240万以上のデザインが生成され、増え続けています",
+    "headlineDesign": "デザイン。",
+    "headlinePrint": "プリント。",
+    "headlineProfit": "利益。",
+    "subtext": "AIであらゆるアイデアをバイラルなマーチデザインに数秒で変換。デザインスキル不要。オンデマンド印刷。世界中に配送。今日からブランドを始めよう。"
+  },
+  "AIGenerator": {
+    "placeholder": "夢のデザインを描写してください...",
+    "random": "ランダム",
+    "generate": "生成",
+    "generating": "生成中...",
+    "tryLabel": "試す：",
+    "resultsHeading": "AI生成デザイン",
+    "promptLabel": "プロンプト：",
+    "buyPrice": "$29.99で購入",
+    "addToStore": "ストアに追加",
+    "regenerate": "さらにバリエーションを生成",
+    "creatingDesign": "デザイン{number}を作成中...",
+    "errorMessage": "デザインの生成に失敗しました。もう一度お試しください。",
+    "samplePrompts": {
+      "p1": "ネオンシティのサイバーパンク猫",
+      "p2": "ヤシの木のあるレトロな夕日",
+      "p3": "抽象的な幾何学的な顔",
+      "p4": "カワイイ宇宙飛行士",
+      "p5": "グリッチアートの蝶の羽",
+      "p6": "Y2Kクロームハートパターン",
+      "p7": "宇宙で火を噴くドラゴン",
+      "p8": "サングラスをかけたヴェイパーウェイブギリシャ像"
+    }
+  },
+  "Stats": {
+    "designsGenerated": "生成されたデザイン",
+    "activeCreators": "アクティブクリエイター",
+    "ordersShipped": "出荷済み注文",
+    "creatorPayouts": "クリエイター支払い"
+  },
+  "Trending": {
+    "heading": "今トレンド中",
+    "subtext": "最もホットなAI生成デザインが飛ぶように売れています。リアルタイムで更新中。",
+    "viewAll": "全商品を見る",
+    "tags": {
+      "all": "すべて",
+      "apparel": "アパレル",
+      "mugs": "マグカップ",
+      "posters": "ポスター",
+      "phoneCases": "スマホケース",
+      "y2k": "Y2K",
+      "anime": "アニメ",
+      "retro": "レトロ"
+    }
+  },
+  "HowItWorksPreview": {
+    "heading": "アイデアからお届けまで",
+    "headingHighlight": "4ステップ",
+    "subtext": "カスタムマーチを作成・販売する最速の方法。在庫なし、手間なし。",
+    "learnMore": "プロセスについてもっと知る",
+    "steps": {
+      "s1": { "title": "アイデアを入力", "desc": "自然言語でデザインコンセプトを記述" },
+      "s2": { "title": "AIが生成", "desc": "10秒以内に4つのユニークなデザインを取得" },
+      "s3": { "title": "印刷します", "desc": "高品質な製品にプレミアムDTG印刷" },
+      "s4": { "title": "高速配送", "desc": "あなたのドアまたはお客様に配達" }
+    }
+  },
+  "Testimonials": {
+    "heading": "クリエイターに",
+    "headingHighlight": "愛されています",
+    "subtext": "TrendThread AIで既に収益を上げている45,000人以上のクリエイターに参加しましょう。",
+    "goTo": "テスティモニアル{number}へ移動"
+  },
+  "CTA": {
+    "heading": "最初のデザインを",
+    "headingHighlight": "作成する準備はできましたか？",
+    "subtext": "AI生成デザインで収益を上げている何千人ものクリエイターに参加。無料で始められます。クレジットカード不要。",
+    "startCreating": "無料で作成を始める",
+    "viewPricing": "料金を見る"
+  },
+  "Footer": {
+    "newsletter": {
+      "heading": "トレンドの先を行こう",
+      "subtext": "トレンドデザイン、クリエイターヒント、限定特典を毎週お届け。",
+      "placeholder": "あなた@email.com",
+      "subscribe": "購読する",
+      "subscribed": "購読完了！"
+    },
+    "product": "製品",
+    "company": "会社",
+    "support": "サポート",
+    "legal": "法務",
+    "links": {
+      "designStudio": "デザインスタジオ",
+      "shop": "ショップ",
+      "collections": "コレクション",
+      "pricing": "料金プラン",
+      "howItWorks": "使い方",
+      "creatorProgram": "クリエイタープログラム",
+      "aboutUs": "会社概要",
+      "blog": "ブログ",
+      "helpCenter": "ヘルプセンター",
+      "contact": "お問い合わせ",
+      "shippingInfo": "配送情報",
+      "returns": "返品",
+      "privacyPolicy": "プライバシーポリシー",
+      "termsOfService": "利用規約",
+      "cookiePolicy": "Cookieポリシー",
+      "dmca": "DMCA"
+    },
+    "copyright": "2026. All rights reserved."
+  },
+  "Cart": {
+    "yourCart": "カート",
+    "closeCart": "カートを閉じる",
+    "emptyTitle": "カートは空です",
+    "emptySubtext": "素敵なデザインを追加しましょう！",
+    "by": "by",
+    "subtotal": "小計",
+    "shippingNote": "送料はチェックアウト時に計算されます",
+    "checkout": "購入手続きへ",
+    "clearCart": "カートを空にする",
+    "removeItem": "アイテムを削除"
+  },
+  "ProductCard": {
+    "addToCart": "カートに追加",
+    "trending": "トレンド",
+    "sold": "{count}個販売",
+    "by": "by"
+  },
+  "Shop": {
+    "heading": "ショップ",
+    "subtext": "プレミアム製品に{count}以上のAI生成デザインを探索。毎日新作が登場。",
+    "filters": "フィルター",
+    "category": "カテゴリ",
+    "style": "スタイル",
+    "priceRange": "価格帯",
+    "popularTags": "人気タグ",
+    "productsFound": "{count}件の商品が見つかりました",
+    "sort": "並び替え：",
+    "sortOptions": {
+      "trending": "トレンド",
+      "popular": "人気順",
+      "priceLow": "価格：安い順",
+      "priceHigh": "価格：高い順"
+    },
+    "noProducts": "商品が見つかりません",
+    "noProductsHint": "フィルターを調整してみてください",
+    "scrollMore": "スクロールしてもっとデザインを見る...",
+    "categories": {
+      "all": "すべて",
+      "apparel": "アパレル",
+      "mugs": "マグカップ",
+      "posters": "ポスター",
+      "phoneCases": "スマホケース"
+    },
+    "styles": {
+      "allStyles": "すべてのスタイル",
+      "y2k": "Y2K",
+      "anime": "アニメ",
+      "retro": "レトロ",
+      "minimalist": "ミニマリスト",
+      "abstract": "アブストラクト"
+    },
+    "priceRanges": {
+      "all": "すべての価格",
+      "under25": "$25未満",
+      "range25to40": "$25 - $40",
+      "over40": "$40以上"
+    }
+  },
+  "Collections": {
+    "badge": "AIキュレーションのコレクション、毎時更新",
+    "heading": "トレンドコレクション",
+    "subtext": "トレンドアルゴリズムが厳選した、最もホットなAI生成デザインのキュレーションコレクションを探索。",
+    "exploreCollection": "コレクションを探索",
+    "designs": "{count}デザイン",
+    "sold": "{count}個販売",
+    "by": "by",
+    "sortBy": "並び替え：",
+    "sortOptions": {
+      "trending": "トレンド",
+      "sales": "売上",
+      "newest": "最新"
+    },
+    "categories": {
+      "all": "すべて",
+      "apparel": "アパレル",
+      "mugs": "マグカップ",
+      "posters": "ポスター",
+      "phoneCases": "スマホケース"
+    }
+  },
+  "Studio": {
+    "heading": "デザインスタジオ",
+    "subtext": "AIでカスタムデザインを作成。スタイル、製品、色を選んで、AIに魔法をかけてもらいましょう。",
+    "designPrompt": "デザインプロンプト",
+    "promptPlaceholder": "デザインアイデアを記述してください... 例：「レトロな街をスケートボードで走るネオンサイバーパンク猫」",
+    "quickIdeas": "クイックアイデア：",
+    "ideas": {
+      "i1": "ヴェイパーウェイブの夕日",
+      "i2": "カワイイ宇宙猫",
+      "i3": "グリッチアートポートレート",
+      "i4": "ネオンシティのドラゴン"
+    },
+    "style": "スタイル",
+    "productType": "製品タイプ",
+    "colorPalette": "カラーパレット",
+    "generateDesign": "デザインを生成",
+    "aiGenerating": "AIがデザインを生成中...",
+    "livePreview": "ライブプレビュー",
+    "aiGenerated": "AI生成",
+    "creatingMasterpiece": "AIが傑作を作成中...",
+    "creatingWait": "10-20秒かかる場合があります",
+    "previewPlaceholder": "AI生成デザインがここに表示されます",
+    "previewHint": "プロンプトを入力して生成をクリック",
+    "palette": "{name}パレット",
+    "aiDesignVariants": "AIデザインバリエーション",
+    "clickToPreview": "クリックしてプレビュー",
+    "orderNow": "今すぐ注文 - ${price}",
+    "save": "保存",
+    "saved": "保存済み！",
+    "regenerate": "同じ設定で再生成",
+    "errorMessage": "デザインの生成に失敗しました。もう一度お試しください。"
+  },
+  "HowItWorks": {
+    "badge": "アイデアから製品まで数分、数週間ではありません",
+    "heading": "",
+    "headingBrand": "TrendThread AI",
+    "headingEnd": "の使い方",
+    "subtext": "従来のデザインから印刷までのパイプラインをAIに置き換えました。結果は？100倍速く、10倍安く、無限にクリエイティブ。",
+    "step": "ステップ",
+    "steps": {
+      "s1": {
+        "title": "ビジョンを記述",
+        "description": "日本語でデザインアイデアを入力。AIは複雑な記述、スタイル、ムード、美学を理解します。具体的にも抽象的にも記述可能。",
+        "details": ["自然言語でのプロンプト", "スタイルとムードのキーワード", "既存のアートスタイルの参照", "多言語サポート"]
+      },
+      "s2": {
+        "title": "AIがデザインを生成",
+        "description": "独自のAIモデルが10秒以内に4つのユニークなデザインバリエーションを生成。各デザインはオリジナル、高解像度、印刷可能。お気に入りを選ぶかさらに生成。",
+        "details": ["1回の生成で4つのユニークなバリエーション", "高解像度ベクター出力", "スタイルに忠実な結果", "無制限の再生成（Pro）"]
+      },
+      "s3": {
+        "title": "プレミアム印刷製造",
+        "description": "業界最先端のDTGおよび昇華印刷を使用。すべての製品はプレミアム素材で作られ、出荷前に品質管理を通過。",
+        "details": ["DTGと昇華印刷", "プレミアム生地と素材", "品質管理検査", "環境にやさしいインク"]
+      },
+      "s4": {
+        "title": "高速グローバル配送",
+        "description": "カスタム製品は2-5営業日以内に出荷。リアルタイムで注文を追跡。180以上の国にエクスプレスとスタンダードオプションで配送。",
+        "details": ["2-5日の製造", "180以上の国", "リアルタイム追跡", "エクスプレス配送対応"]
+      }
+    },
+    "comparisonHeading": "従来のPOD vs",
+    "comparisonBrand": "TrendThread AI",
+    "comparisonSubtext": "クリエイターがAI搭載のプリントオンデマンドに乗り換える理由をご覧ください。",
+    "comparisonFeature": "機能",
+    "comparisonTraditional": "従来のPOD",
+    "comparison": {
+      "r1": { "feature": "デザイン作成時間", "traditional": "2-5日", "trendthread": "10秒" },
+      "r2": { "feature": "デザインコスト", "traditional": "$50-500+", "trendthread": "無料 - $0.50" },
+      "r3": { "feature": "必要なスキル", "traditional": "プロフェッショナル", "trendthread": "不要" },
+      "r4": { "feature": "製品モックアップ", "traditional": "手動作成", "trendthread": "即座のAIモックアップ" },
+      "r5": { "feature": "在庫の必要性", "traditional": "はい、前払い", "trendthread": "在庫ゼロ" },
+      "r6": { "feature": "最小注文数", "traditional": "25-100個", "trendthread": "1個" },
+      "r7": { "feature": "市場投入までの時間", "traditional": "2-4週間", "trendthread": "数分" }
+    },
+    "ctaHeading": "始める",
+    "ctaHighlight": "準備はできましたか？",
+    "ctaSubtext": "10秒で最初のAIデザインを作成。無料、クレジットカード不要。",
+    "ctaButton": "デザインスタジオを開く"
+  },
+  "Creators": {
+    "badge": "クリエイターに$320万以上支払い済み",
+    "heading": "クリエイタープログラム",
+    "subtext": "クリエイティビティを収入に変換。AIでデザインし、世界に販売し、すべての販売で最大20%のコミッションを獲得。",
+    "stats": {
+      "activeCreators": "アクティブクリエイター",
+      "totalPayouts": "総支払額",
+      "avgMonthly": "平均月収",
+      "topCreator": "トップクリエイター収入"
+    },
+    "commissionTiers": "コミッションティア",
+    "commissionSubtext": "売れば売るほど稼げる。シンプル。",
+    "tiers": {
+      "gold": { "name": "ゴールド", "requirement": "月0-50件の販売" },
+      "platinum": { "name": "プラチナ", "requirement": "月51-200件の販売" },
+      "diamond": { "name": "ダイヤモンド", "requirement": "月200件以上の販売" }
+    },
+    "tierFeatures": {
+      "aiTools": "AIデザインツールへのアクセス",
+      "analytics": "分析ダッシュボード",
+      "weeklyPayouts": "週次支払い",
+      "prioritySupport": "優先サポート",
+      "featuredPlacement": "注目配置",
+      "customStorefront": "カスタムストアフロント"
+    },
+    "howToJoin": "参加方法",
+    "joinSteps": {
+      "s1": { "title": "応募", "desc": "簡単な申請フォームに記入。承認は24時間以内。" },
+      "s2": { "title": "作成", "desc": "AIツールを使って素晴らしいデザインを生成し、コレクションを構築。" },
+      "s3": { "title": "共有", "desc": "SNS、ストア、マーケットプレイスでデザインを共有。" },
+      "s4": { "title": "稼ぐ", "desc": "すべての販売でコミッションを獲得。PayPalまたはStripeで毎週支払い。" }
+    },
+    "calculator": {
+      "heading": "収益計算機",
+      "subtext": "TrendThread AIクリエイターとしていくら稼げるか確認しましょう。",
+      "monthlyViews": "月間ストア閲覧数",
+      "commissionTier": "コミッションティア",
+      "estSales": "推定販売数",
+      "monthlyEarnings": "月収",
+      "annualEarnings": "年収",
+      "perMonth": "/月"
+    },
+    "stories": "クリエイターストーリー",
+    "topCreators": "トップクリエイター",
+    "designs": "デザイン",
+    "followers": "フォロワー",
+    "earned": "獲得額：",
+    "applyNow": "今すぐ応募",
+    "applySubtext": "クリエイターコミュニティに参加して、今日から稼ぎ始めましょう。",
+    "form": {
+      "fullName": "氏名",
+      "namePlaceholder": "お名前",
+      "email": "メールアドレス",
+      "emailPlaceholder": "あなた@email.com",
+      "socialMedia": "SNSプロフィール",
+      "socialPlaceholder": "https://instagram.com/yourhandle",
+      "followerCount": "フォロワー数",
+      "selectRange": "範囲を選択",
+      "range0to1k": "0 - 1,000",
+      "range1kto10k": "1,000 - 10,000",
+      "range10kto50k": "10,000 - 50,000",
+      "range50kto100k": "50,000 - 100,000",
+      "range100kPlus": "100,000+",
+      "niche": "あなたのニッチ",
+      "nichePlaceholder": "例：ファッション、ゲーム、アート、フィットネス",
+      "submit": "応募を送信"
+    },
+    "submitted": {
+      "title": "応募が送信されました！",
+      "text": "24時間以内に応募を審査してご連絡します。確認メールをご確認ください。"
+    }
+  },
+  "Pricing": {
+    "heading": "シンプルで",
+    "headingHighlight": "透明な",
+    "headingEnd": "料金設定",
+    "subtext": "無料で始めて、準備ができたらアップグレード。隠れた費用なし、サプライズなし。",
+    "monthly": "月額",
+    "annual": "年額",
+    "annualDiscount": "-20%",
+    "billedAnnually": "/月（年額請求）",
+    "mostPopular": "最も人気",
+    "plans": {
+      "free": {
+        "name": "無料",
+        "price": "$0",
+        "period": "永久",
+        "description": "AIデザイン生成を試すのに最適。",
+        "features": [
+          "1日10件のAIデザイン",
+          "標準品質エクスポート",
+          "5つの製品タイプ",
+          "基本スタイルオプション",
+          "コミュニティサポート",
+          "標準配送料"
+        ],
+        "cta": "無料で始める"
+      },
+      "pro": {
+        "name": "Proクリエイター",
+        "price": "$29",
+        "period": "/月",
+        "description": "本格的なマーチビジネスを構築するクリエイター向け。",
+        "features": [
+          "無制限AIデザイン",
+          "HD品質エクスポート（4K）",
+          "すべての製品タイプ",
+          "すべてのスタイルオプション+カスタム",
+          "優先サポート",
+          "分析ダッシュボード",
+          "クリエイターマーケットプレイス掲載",
+          "10%コミッションブースト",
+          "ウォーターマーク除去",
+          "一括生成（20件同時）"
+        ],
+        "cta": "Proにする"
+      },
+      "business": {
+        "name": "ビジネス",
+        "price": "$99",
+        "period": "/月",
+        "description": "プリントオンデマンドをスケールするブランドやエージェンシー向け。",
+        "features": [
+          "Proクリエイターのすべて",
+          "ホワイトラベルブランディング",
+          "APIアクセス",
+          "カスタム梱包インサート",
+          "専任アカウントマネージャー",
+          "ボリュームディスカウント（最大40%）",
+          "チームアカウント（5席）",
+          "高度な分析",
+          "優先製造キュー",
+          "カスタム製品タイプ"
+        ],
+        "cta": "ビジネスを始める"
+      }
+    },
+    "bulkPricing": "ボリュームプライシング",
+    "bulkCalculator": "計算機",
+    "bulkSubtext": "大量注文でより良い料金を。最大40%オフ。",
+    "orderQuantity": "注文数量",
+    "units": "個",
+    "off": "オフ",
+    "unitsPlus": "{count}個以上",
+    "perUnit": "単価",
+    "discount": "割引",
+    "total": "合計",
+    "enterprise": {
+      "heading": "エンタープライズ",
+      "subtext": "ブランドやエージェンシー向けのカスタムソリューションが必要ですか？月1,000個以上？カスタムプランを作成します。",
+      "emailPlaceholder": "あなた@会社.com",
+      "contactSales": "営業に連絡",
+      "contactSent": "24時間以内にご連絡します！"
+    },
+    "faqHeading": "よくある",
+    "faqHighlight": "ご質問",
+    "faqs": {
+      "q1": { "q": "AIデザインジェネレーターはどのように機能しますか？", "a": "デザインアイデアのテキストプロンプトを入力し、スタイルと製品タイプを選択するだけで、AIが数秒で4つのユニークなデザインを生成します。その後、カスタマイズ、注文、またはストアに追加できます。" },
+      "q2": { "q": "印刷品質はどうですか？", "a": "すべての製品にプレミアムDTG印刷と高品質昇華印刷を使用。色は鮮やか、耐久性があり、洗濯に強いです。すべての注文は出荷前に品質管理を通過します。" },
+      "q3": { "q": "配送にどのくらいかかりますか？", "a": "米国内の標準配送は5-8営業日。エクスプレス配送（2-3日）も利用可能。国際注文は通常10-15営業日で届きます。" },
+      "q4": { "q": "TrendThread AIで作成したデザインを販売できますか？", "a": "もちろん！クリエイタープログラムに参加して、すべての販売で10-20%のコミッションを獲得。プラットフォームで生成したデザインの商業権はあなたのものです。" },
+      "q5": { "q": "作成できるデザイン数に制限はありますか？", "a": "無料アカウントは1日最大10デザイン。Proクリエイターは無制限生成、ビジネスアカウントは一括生成ツールを含みます。" },
+      "q6": { "q": "Shopifyと統合できますか？", "a": "はい！Shopify統合により、ワンクリックでShopifyストアにデザインを直接プッシュできます。印刷、梱包、配送は自動で処理します。" },
+      "q7": { "q": "注文に満足できない場合は？", "a": "100%満足保証を提供しています。印刷品質や製品の欠陥に問題がある場合、30日以内に再印刷または返金します。" },
+      "q8": { "q": "既存のブランドにTrendThread AIを使用できますか？", "a": "はい！ビジネスアカウントには、カスタムブランディング、梱包インサート、配送伝票にあなたのロゴを含むホワイトラベルオプションが含まれます。" }
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "言語"
+  },
+  "Common": {
+    "addedToCart": "{title}がカートに追加されました！"
+  }
+}

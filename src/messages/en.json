@@ -1,0 +1,457 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "collections": "Collections",
+    "shop": "Shop",
+    "designStudio": "Design Studio",
+    "howItWorks": "How It Works",
+    "creators": "Creators",
+    "pricing": "Pricing",
+    "startCreating": "Start Creating",
+    "openCart": "Open cart",
+    "toggleMenu": "Toggle menu"
+  },
+  "Hero": {
+    "badge": "2.4M+ designs generated and counting",
+    "headlineDesign": "Design.",
+    "headlinePrint": "Print.",
+    "headlineProfit": "Profit.",
+    "subtext": "Turn any idea into a viral merch design in seconds with AI. No design skills needed. Print on demand. Ship worldwide. Start your brand today."
+  },
+  "AIGenerator": {
+    "placeholder": "Describe your dream design...",
+    "random": "Random",
+    "generate": "Generate",
+    "generating": "Generating...",
+    "tryLabel": "Try:",
+    "resultsHeading": "AI-Generated Designs",
+    "promptLabel": "Prompt:",
+    "buyPrice": "Buy $29.99",
+    "addToStore": "Add to Store",
+    "regenerate": "Generate More Variations",
+    "creatingDesign": "Creating design {number}...",
+    "errorMessage": "Failed to generate designs. Please try again.",
+    "samplePrompts": {
+      "p1": "Cyberpunk cat in a neon city",
+      "p2": "Retro sunset with palm trees",
+      "p3": "Abstract geometric faces",
+      "p4": "Kawaii space astronaut",
+      "p5": "Glitch art butterfly wings",
+      "p6": "Y2K chrome hearts pattern",
+      "p7": "Dragon breathing fire in space",
+      "p8": "Vaporwave Greek statue with sunglasses"
+    }
+  },
+  "Stats": {
+    "designsGenerated": "Designs Generated",
+    "activeCreators": "Active Creators",
+    "ordersShipped": "Orders Shipped",
+    "creatorPayouts": "Creator Payouts"
+  },
+  "Trending": {
+    "heading": "Trending Right Now",
+    "subtext": "The hottest AI-generated designs flying off the shelves. Updated in real-time.",
+    "viewAll": "View All Products",
+    "tags": {
+      "all": "All",
+      "apparel": "Apparel",
+      "mugs": "Mugs",
+      "posters": "Posters",
+      "phoneCases": "Phone Cases",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro"
+    }
+  },
+  "HowItWorksPreview": {
+    "heading": "From Idea to Doorstep in",
+    "headingHighlight": "4 Steps",
+    "subtext": "The fastest way to create and sell custom merch. No inventory, no hassle.",
+    "learnMore": "Learn more about our process",
+    "steps": {
+      "s1": { "title": "Type Your Idea", "desc": "Describe any design concept in natural language" },
+      "s2": { "title": "AI Generates", "desc": "Get 4 unique designs in under 10 seconds" },
+      "s3": { "title": "We Print It", "desc": "Premium DTG printing on quality products" },
+      "s4": { "title": "Shipped Fast", "desc": "Delivered to your door or your customers" }
+    }
+  },
+  "Testimonials": {
+    "heading": "Creators",
+    "headingHighlight": "Love Us",
+    "subtext": "Join 45,000+ creators already making money with TrendThread AI.",
+    "goTo": "Go to testimonial {number}"
+  },
+  "CTA": {
+    "heading": "Ready to Create Your",
+    "headingHighlight": "First Design?",
+    "subtext": "Join thousands of creators earning money with AI-generated designs. Start for free. No credit card needed.",
+    "startCreating": "Start Creating Free",
+    "viewPricing": "View Pricing"
+  },
+  "Footer": {
+    "newsletter": {
+      "heading": "Stay Ahead of the Trends",
+      "subtext": "Get weekly drops of trending designs, creator tips, and exclusive deals.",
+      "placeholder": "your@email.com",
+      "subscribe": "Subscribe",
+      "subscribed": "Subscribed!"
+    },
+    "product": "Product",
+    "company": "Company",
+    "support": "Support",
+    "legal": "Legal",
+    "links": {
+      "designStudio": "Design Studio",
+      "shop": "Shop",
+      "collections": "Collections",
+      "pricing": "Pricing",
+      "howItWorks": "How It Works",
+      "creatorProgram": "Creator Program",
+      "aboutUs": "About Us",
+      "blog": "Blog",
+      "helpCenter": "Help Center",
+      "contact": "Contact",
+      "shippingInfo": "Shipping Info",
+      "returns": "Returns",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookiePolicy": "Cookie Policy",
+      "dmca": "DMCA"
+    },
+    "copyright": "2026. All rights reserved."
+  },
+  "Cart": {
+    "yourCart": "Your Cart",
+    "closeCart": "Close cart",
+    "emptyTitle": "Your cart is empty",
+    "emptySubtext": "Start adding some fire designs!",
+    "by": "by",
+    "subtotal": "Subtotal",
+    "shippingNote": "Shipping calculated at checkout",
+    "checkout": "Checkout",
+    "clearCart": "Clear Cart",
+    "removeItem": "Remove item"
+  },
+  "ProductCard": {
+    "addToCart": "Add to Cart",
+    "trending": "Trending",
+    "sold": "{count} sold",
+    "by": "by"
+  },
+  "Shop": {
+    "heading": "The Shop",
+    "subtext": "Browse {count}+ AI-generated designs on premium products. New drops every day.",
+    "filters": "Filters",
+    "category": "Category",
+    "style": "Style",
+    "priceRange": "Price Range",
+    "popularTags": "Popular Tags",
+    "productsFound": "{count} products found",
+    "sort": "Sort:",
+    "sortOptions": {
+      "trending": "Trending",
+      "popular": "Most Popular",
+      "priceLow": "Price: Low to High",
+      "priceHigh": "Price: High to Low"
+    },
+    "noProducts": "No products found",
+    "noProductsHint": "Try adjusting your filters",
+    "scrollMore": "Scroll for more designs...",
+    "categories": {
+      "all": "All",
+      "apparel": "Apparel",
+      "mugs": "Mugs",
+      "posters": "Posters",
+      "phoneCases": "Phone Cases"
+    },
+    "styles": {
+      "allStyles": "All Styles",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro",
+      "minimalist": "Minimalist",
+      "abstract": "Abstract"
+    },
+    "priceRanges": {
+      "all": "All Prices",
+      "under25": "Under $25",
+      "range25to40": "$25 - $40",
+      "over40": "$40+"
+    }
+  },
+  "Collections": {
+    "badge": "AI-curated collections updated hourly",
+    "heading": "Trending Collections",
+    "subtext": "Explore curated collections of the hottest AI-generated designs, hand-picked by our trending algorithm.",
+    "exploreCollection": "Explore Collection",
+    "designs": "{count} designs",
+    "sold": "{count} sold",
+    "by": "by",
+    "sortBy": "Sort by:",
+    "sortOptions": {
+      "trending": "Trending",
+      "sales": "Sales",
+      "newest": "Newest"
+    },
+    "categories": {
+      "all": "All",
+      "apparel": "Apparel",
+      "mugs": "Mugs",
+      "posters": "Posters",
+      "phoneCases": "Phone Cases"
+    }
+  },
+  "Studio": {
+    "heading": "Design Studio",
+    "subtext": "Create custom designs with AI. Choose your style, product, and colors, then let our AI do the magic.",
+    "designPrompt": "Design Prompt",
+    "promptPlaceholder": "Describe your design idea... e.g., 'A neon cyberpunk cat riding a skateboard through a retro city at sunset'",
+    "quickIdeas": "Quick ideas:",
+    "ideas": {
+      "i1": "Vaporwave sunset",
+      "i2": "Kawaii space cat",
+      "i3": "Glitch art portrait",
+      "i4": "Dragon in neon city"
+    },
+    "style": "Style",
+    "productType": "Product Type",
+    "colorPalette": "Color Palette",
+    "generateDesign": "Generate Design",
+    "aiGenerating": "AI is Generating Your Designs...",
+    "livePreview": "Live Preview",
+    "aiGenerated": "AI Generated",
+    "creatingMasterpiece": "AI is creating your masterpiece...",
+    "creatingWait": "This may take 10-20 seconds",
+    "previewPlaceholder": "Your AI-generated design will appear here",
+    "previewHint": "Enter a prompt and click Generate",
+    "palette": "{name} palette",
+    "aiDesignVariants": "AI Design Variants",
+    "clickToPreview": "Click to preview",
+    "orderNow": "Order Now - ${price}",
+    "save": "Save",
+    "saved": "Saved!",
+    "regenerate": "Regenerate with Same Settings",
+    "errorMessage": "Failed to generate designs. Please try again."
+  },
+  "HowItWorks": {
+    "badge": "From idea to product in minutes, not weeks",
+    "heading": "How",
+    "headingBrand": "TrendThread AI",
+    "headingEnd": "Works",
+    "subtext": "We replaced the traditional design-to-print pipeline with AI. The result? 100x faster, 10x cheaper, infinitely more creative.",
+    "step": "Step",
+    "steps": {
+      "s1": {
+        "title": "Describe Your Vision",
+        "description": "Type any design idea in plain English. Our AI understands complex descriptions, styles, moods, and aesthetics. You can be as specific or as abstract as you want.",
+        "details": ["Natural language prompts", "Style and mood keywords", "Reference existing art styles", "Multi-language support"]
+      },
+      "s2": {
+        "title": "AI Generates Designs",
+        "description": "Our proprietary AI model generates 4 unique design variants in under 10 seconds. Each design is original, high-resolution, and print-ready. Pick your favorite or generate more.",
+        "details": ["4 unique variants per generation", "High-res vector output", "Style-accurate results", "Unlimited regenerations (Pro)"]
+      },
+      "s3": {
+        "title": "Premium Print Production",
+        "description": "We use industry-leading DTG (Direct-to-Garment) and sublimation printing. Every product is made with premium materials and goes through quality control before shipping.",
+        "details": ["DTG & sublimation printing", "Premium fabric & materials", "Quality control inspection", "Eco-friendly inks"]
+      },
+      "s4": {
+        "title": "Fast Global Shipping",
+        "description": "Your custom product ships within 2-5 business days. Track your order in real-time. We ship to 180+ countries with express and standard options.",
+        "details": ["2-5 day production", "180+ countries", "Real-time tracking", "Express shipping available"]
+      }
+    },
+    "comparisonHeading": "Traditional POD vs",
+    "comparisonBrand": "TrendThread AI",
+    "comparisonSubtext": "See why creators are switching to AI-powered print on demand.",
+    "comparisonFeature": "Feature",
+    "comparisonTraditional": "Traditional POD",
+    "comparison": {
+      "r1": { "feature": "Design creation time", "traditional": "2-5 days", "trendthread": "10 seconds" },
+      "r2": { "feature": "Design cost", "traditional": "$50-500+", "trendthread": "Free - $0.50" },
+      "r3": { "feature": "Design skills needed", "traditional": "Professional", "trendthread": "None" },
+      "r4": { "feature": "Product mockups", "traditional": "Manual creation", "trendthread": "Instant AI mockup" },
+      "r5": { "feature": "Inventory required", "traditional": "Yes, upfront", "trendthread": "Zero inventory" },
+      "r6": { "feature": "Minimum order", "traditional": "25-100 units", "trendthread": "1 unit" },
+      "r7": { "feature": "Time to market", "traditional": "2-4 weeks", "trendthread": "Minutes" }
+    },
+    "ctaHeading": "Ready to",
+    "ctaHighlight": "Get Started?",
+    "ctaSubtext": "Create your first AI design in 10 seconds. Free, no credit card required.",
+    "ctaButton": "Open Design Studio"
+  },
+  "Creators": {
+    "badge": "$3.2M+ paid out to creators",
+    "heading": "Creator Program",
+    "subtext": "Turn your creativity into income. Design with AI, sell to the world, and earn up to 20% commission on every sale.",
+    "stats": {
+      "activeCreators": "Active Creators",
+      "totalPayouts": "Total Payouts",
+      "avgMonthly": "Avg. Monthly Earnings",
+      "topCreator": "Top Creator Earnings"
+    },
+    "commissionTiers": "Commission Tiers",
+    "commissionSubtext": "Earn more as you sell more. Simple.",
+    "tiers": {
+      "gold": { "name": "Gold", "requirement": "0-50 sales/month" },
+      "platinum": { "name": "Platinum", "requirement": "51-200 sales/month" },
+      "diamond": { "name": "Diamond", "requirement": "200+ sales/month" }
+    },
+    "tierFeatures": {
+      "aiTools": "AI design tools access",
+      "analytics": "Analytics dashboard",
+      "weeklyPayouts": "Weekly payouts",
+      "prioritySupport": "Priority support",
+      "featuredPlacement": "Featured placement",
+      "customStorefront": "Custom storefront"
+    },
+    "howToJoin": "How to Join",
+    "joinSteps": {
+      "s1": { "title": "Apply", "desc": "Fill out a quick application form. Approval takes under 24 hours." },
+      "s2": { "title": "Create", "desc": "Use our AI tools to generate amazing designs and build collections." },
+      "s3": { "title": "Share", "desc": "Share your designs on social media, your store, or our marketplace." },
+      "s4": { "title": "Earn", "desc": "Earn commissions on every sale. Get paid weekly via PayPal or Stripe." }
+    },
+    "calculator": {
+      "heading": "Earnings Calculator",
+      "subtext": "See how much you could earn as a TrendThread AI creator.",
+      "monthlyViews": "Monthly Store Views",
+      "commissionTier": "Commission Tier",
+      "estSales": "Est. Sales",
+      "monthlyEarnings": "Monthly Earnings",
+      "annualEarnings": "Annual Earnings",
+      "perMonth": "/mo"
+    },
+    "stories": "Creator Stories",
+    "topCreators": "Top Creators",
+    "designs": "designs",
+    "followers": "followers",
+    "earned": "Earned:",
+    "applyNow": "Apply Now",
+    "applySubtext": "Join our creator community and start earning today.",
+    "form": {
+      "fullName": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "socialMedia": "Social Media Profile",
+      "socialPlaceholder": "https://instagram.com/yourhandle",
+      "followerCount": "Follower Count",
+      "selectRange": "Select range",
+      "range0to1k": "0 - 1,000",
+      "range1kto10k": "1,000 - 10,000",
+      "range10kto50k": "10,000 - 50,000",
+      "range50kto100k": "50,000 - 100,000",
+      "range100kPlus": "100,000+",
+      "niche": "Your Niche",
+      "nichePlaceholder": "e.g., Fashion, Gaming, Art, Fitness",
+      "submit": "Submit Application"
+    },
+    "submitted": {
+      "title": "Application Submitted!",
+      "text": "We will review your application and get back to you within 24 hours. Check your email for confirmation."
+    }
+  },
+  "Pricing": {
+    "heading": "Simple,",
+    "headingHighlight": "Transparent",
+    "headingEnd": "Pricing",
+    "subtext": "Start free, upgrade when you are ready. No hidden fees, no surprises.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "annualDiscount": "-20%",
+    "billedAnnually": "/mo (billed annually)",
+    "mostPopular": "Most Popular",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "description": "Perfect for trying out AI design generation.",
+        "features": [
+          "10 AI designs per day",
+          "Standard quality export",
+          "5 product types",
+          "Basic style options",
+          "Community support",
+          "Standard shipping rates"
+        ],
+        "cta": "Start Free"
+      },
+      "pro": {
+        "name": "Pro Creator",
+        "price": "$29",
+        "period": "/month",
+        "description": "For creators ready to build a real merch business.",
+        "features": [
+          "Unlimited AI designs",
+          "HD quality export (4K)",
+          "All product types",
+          "All style options + custom",
+          "Priority support",
+          "Analytics dashboard",
+          "Creator marketplace listing",
+          "10% commission boost",
+          "Custom watermark removal",
+          "Bulk generation (20 at once)"
+        ],
+        "cta": "Go Pro"
+      },
+      "business": {
+        "name": "Business",
+        "price": "$99",
+        "period": "/month",
+        "description": "For brands and agencies scaling print-on-demand.",
+        "features": [
+          "Everything in Pro Creator",
+          "White-label branding",
+          "API access",
+          "Custom packaging inserts",
+          "Dedicated account manager",
+          "Bulk discounts (up to 40%)",
+          "Team accounts (5 seats)",
+          "Advanced analytics",
+          "Priority production queue",
+          "Custom product types"
+        ],
+        "cta": "Start Business"
+      }
+    },
+    "bulkPricing": "Bulk Pricing",
+    "bulkCalculator": "Calculator",
+    "bulkSubtext": "Get better rates with higher order volumes. Up to 40% off.",
+    "orderQuantity": "Order Quantity",
+    "units": "units",
+    "off": "off",
+    "unitsPlus": "{count}+ units",
+    "perUnit": "Per Unit",
+    "discount": "Discount",
+    "total": "Total",
+    "enterprise": {
+      "heading": "Enterprise",
+      "subtext": "Need custom solutions for your brand or agency? 1,000+ units/month? Let us build a custom plan for you.",
+      "emailPlaceholder": "your@company.com",
+      "contactSales": "Contact Sales",
+      "contactSent": "We will be in touch within 24 hours!"
+    },
+    "faqHeading": "Frequently Asked",
+    "faqHighlight": "Questions",
+    "faqs": {
+      "q1": { "q": "How does the AI design generator work?", "a": "Simply type a text prompt describing your design idea, choose a style and product type, and our AI generates four unique designs in seconds. You can then customize, order, or add them to your store." },
+      "q2": { "q": "What is the print quality like?", "a": "We use premium DTG (Direct-to-Garment) printing and high-quality sublimation for all products. Colors are vibrant, durable, and wash-resistant. Every order goes through quality control before shipping." },
+      "q3": { "q": "How long does shipping take?", "a": "Standard shipping takes 5-8 business days within the US. Express shipping (2-3 days) is available. International orders typically arrive within 10-15 business days." },
+      "q4": { "q": "Can I sell designs I create on TrendThread AI?", "a": "Absolutely! Join our Creator Program and earn 10-20% commission on every sale. You own the commercial rights to any design you generate on our platform." },
+      "q5": { "q": "Is there a limit to how many designs I can create?", "a": "Free accounts can generate up to 10 designs per day. Pro Creator accounts get unlimited generations, and Business accounts include bulk generation tools." },
+      "q6": { "q": "Do you integrate with Shopify?", "a": "Yes! Our Shopify integration lets you push designs directly to your Shopify store with one click. We handle printing, packing, and shipping automatically." },
+      "q7": { "q": "What if I am not happy with my order?", "a": "We offer a 100% satisfaction guarantee. If there is any issue with print quality or product defects, we will reprint or refund your order within 30 days." },
+      "q8": { "q": "Can I use TrendThread AI for my existing brand?", "a": "Yes! Business accounts include white-label options with custom branding, packaging inserts, and your own logo on packing slips." }
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Language"
+  },
+  "Common": {
+    "addedToCart": "{title} added to cart!"
+  }
+}

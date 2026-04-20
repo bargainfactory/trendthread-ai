@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { collections } from "@/lib/mock-data";
 
-const categories = ["All", "Apparel", "Mugs", "Posters", "Phone Cases"];
+const categoryKeys = ["all", "apparel", "mugs", "posters", "phoneCases"] as const;
 
 export default function CollectionsPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const t = useTranslations("Collections");
+  const [activeCategory, setActiveCategory] = useState("all");
   const [sortBy, setSortBy] = useState<"trending" | "sales" | "newest">("trending");
 
   const sorted = [...collections].sort((a, b) => {
@@ -31,14 +33,13 @@ export default function CollectionsPage() {
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-6">
-              <span>🔥</span> AI-curated collections updated hourly
+              <span>🔥</span> {t("badge")}
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              <span className="text-gradient">Trending Collections</span>
+              <span className="text-gradient">{t("heading")}</span>
             </h1>
             <p className="text-gray-400 max-w-xl mx-auto text-lg">
-              Explore curated collections of the hottest AI-generated designs,
-              hand-picked by our trending algorithm.
+              {t("subtext")}
             </p>
           </motion.div>
         </div>
@@ -50,7 +51,7 @@ export default function CollectionsPage() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             {/* Category tags */}
             <div className="flex flex-wrap gap-2">
-              {categories.map((cat) => (
+              {categoryKeys.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
@@ -60,14 +61,14 @@ export default function CollectionsPage() {
                       : "bg-surface border border-surface-border text-gray-400 hover:text-white hover:border-neon-purple/50"
                   }`}
                 >
-                  {cat}
+                  {t(`categories.${cat}`)}
                 </button>
               ))}
             </div>
 
             {/* Sort */}
             <div className="flex items-center gap-2">
-              <span className="text-sm text-gray-500">Sort by:</span>
+              <span className="text-sm text-gray-500">{t("sortBy")}</span>
               {(["trending", "sales", "newest"] as const).map((s) => (
                 <button
                   key={s}
@@ -78,7 +79,7 @@ export default function CollectionsPage() {
                       : "text-gray-400 hover:text-white"
                   }`}
                 >
-                  {s.charAt(0).toUpperCase() + s.slice(1)}
+                  {t(`sortOptions.${s}`)}
                 </button>
               ))}
             </div>
@@ -115,7 +116,7 @@ export default function CollectionsPage() {
 
                   {/* Product count */}
                   <div className="absolute bottom-4 left-4 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-xs text-white">
-                    {collection.productCount} designs
+                    {t("designs", { count: collection.productCount })}
                   </div>
 
                   {/* Hover overlay */}
@@ -124,7 +125,7 @@ export default function CollectionsPage() {
                       href="/shop"
                       className="px-6 py-2 rounded-xl bg-white/20 backdrop-blur-sm text-white font-semibold border border-white/30 hover:bg-white/30 transition-all"
                     >
-                      Explore Collection
+                      {t("exploreCollection")}
                     </Link>
                   </div>
                 </div>
@@ -136,7 +137,7 @@ export default function CollectionsPage() {
                       {collection.name}
                     </h3>
                     <span className="text-xs text-gray-500 shrink-0">
-                      {collection.salesCount.toLocaleString()} sold
+                      {t("sold", { count: collection.salesCount.toLocaleString() })}
                     </span>
                   </div>
                   <p className="text-sm text-gray-400 mb-3">
@@ -144,7 +145,7 @@ export default function CollectionsPage() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-500">
-                      by{" "}
+                      {t("by")}{" "}
                       <span className="text-neon-purple font-medium">
                         {collection.creator}
                       </span>

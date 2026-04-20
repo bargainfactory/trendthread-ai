@@ -1,0 +1,457 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "collections": "Colecciones",
+    "shop": "Tienda",
+    "designStudio": "Estudio de Diseno",
+    "howItWorks": "Como Funciona",
+    "creators": "Creadores",
+    "pricing": "Precios",
+    "startCreating": "Empieza a Crear",
+    "openCart": "Abrir carrito",
+    "toggleMenu": "Abrir menu"
+  },
+  "Hero": {
+    "badge": "2.4M+ disenos generados y contando",
+    "headlineDesign": "Disena.",
+    "headlinePrint": "Imprime.",
+    "headlineProfit": "Gana.",
+    "subtext": "Convierte cualquier idea en un diseno viral para merch en segundos con IA. Sin habilidades de diseno. Impresion bajo demanda. Envio mundial. Comienza tu marca hoy."
+  },
+  "AIGenerator": {
+    "placeholder": "Describe el diseno de tus suenos...",
+    "random": "Aleatorio",
+    "generate": "Generar",
+    "generating": "Generando...",
+    "tryLabel": "Prueba:",
+    "resultsHeading": "Disenos Generados por IA",
+    "promptLabel": "Descripcion:",
+    "buyPrice": "Comprar $29.99",
+    "addToStore": "Agregar a Tienda",
+    "regenerate": "Generar Mas Variaciones",
+    "creatingDesign": "Creando diseno {number}...",
+    "errorMessage": "Error al generar disenos. Intenta de nuevo.",
+    "samplePrompts": {
+      "p1": "Gato cyberpunk en una ciudad neon",
+      "p2": "Atardecer retro con palmeras",
+      "p3": "Caras geometricas abstractas",
+      "p4": "Astronauta kawaii espacial",
+      "p5": "Alas de mariposa con arte glitch",
+      "p6": "Patron de corazones cromados Y2K",
+      "p7": "Dragon lanzando fuego en el espacio",
+      "p8": "Estatua griega vaporwave con gafas de sol"
+    }
+  },
+  "Stats": {
+    "designsGenerated": "Disenos Generados",
+    "activeCreators": "Creadores Activos",
+    "ordersShipped": "Pedidos Enviados",
+    "creatorPayouts": "Pagos a Creadores"
+  },
+  "Trending": {
+    "heading": "En Tendencia Ahora",
+    "subtext": "Los disenos generados por IA mas populares volando de los estantes. Actualizado en tiempo real.",
+    "viewAll": "Ver Todos los Productos",
+    "tags": {
+      "all": "Todos",
+      "apparel": "Ropa",
+      "mugs": "Tazas",
+      "posters": "Posters",
+      "phoneCases": "Fundas",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro"
+    }
+  },
+  "HowItWorksPreview": {
+    "heading": "De Idea a Tu Puerta en",
+    "headingHighlight": "4 Pasos",
+    "subtext": "La forma mas rapida de crear y vender merch personalizado. Sin inventario, sin complicaciones.",
+    "learnMore": "Conoce mas sobre nuestro proceso",
+    "steps": {
+      "s1": { "title": "Escribe Tu Idea", "desc": "Describe cualquier concepto de diseno en lenguaje natural" },
+      "s2": { "title": "La IA Genera", "desc": "Obtiene 4 disenos unicos en menos de 10 segundos" },
+      "s3": { "title": "Nosotros Imprimimos", "desc": "Impresion DTG premium en productos de calidad" },
+      "s4": { "title": "Envio Rapido", "desc": "Entregado a tu puerta o a tus clientes" }
+    }
+  },
+  "Testimonials": {
+    "heading": "Los Creadores",
+    "headingHighlight": "Nos Aman",
+    "subtext": "Unete a mas de 45,000 creadores que ya ganan dinero con TrendThread AI.",
+    "goTo": "Ir al testimonio {number}"
+  },
+  "CTA": {
+    "heading": "Listo para Crear Tu",
+    "headingHighlight": "Primer Diseno?",
+    "subtext": "Unete a miles de creadores ganando dinero con disenos generados por IA. Comienza gratis. Sin tarjeta de credito.",
+    "startCreating": "Empieza a Crear Gratis",
+    "viewPricing": "Ver Precios"
+  },
+  "Footer": {
+    "newsletter": {
+      "heading": "Mantente al Dia con las Tendencias",
+      "subtext": "Recibe semanalmente disenos en tendencia, consejos para creadores y ofertas exclusivas.",
+      "placeholder": "tu@email.com",
+      "subscribe": "Suscribirse",
+      "subscribed": "Suscrito!"
+    },
+    "product": "Producto",
+    "company": "Empresa",
+    "support": "Soporte",
+    "legal": "Legal",
+    "links": {
+      "designStudio": "Estudio de Diseno",
+      "shop": "Tienda",
+      "collections": "Colecciones",
+      "pricing": "Precios",
+      "howItWorks": "Como Funciona",
+      "creatorProgram": "Programa de Creadores",
+      "aboutUs": "Sobre Nosotros",
+      "blog": "Blog",
+      "helpCenter": "Centro de Ayuda",
+      "contact": "Contacto",
+      "shippingInfo": "Info de Envio",
+      "returns": "Devoluciones",
+      "privacyPolicy": "Politica de Privacidad",
+      "termsOfService": "Terminos de Servicio",
+      "cookiePolicy": "Politica de Cookies",
+      "dmca": "DMCA"
+    },
+    "copyright": "2026. Todos los derechos reservados."
+  },
+  "Cart": {
+    "yourCart": "Tu Carrito",
+    "closeCart": "Cerrar carrito",
+    "emptyTitle": "Tu carrito esta vacio",
+    "emptySubtext": "Empieza a agregar disenos increibles!",
+    "by": "por",
+    "subtotal": "Subtotal",
+    "shippingNote": "Envio calculado al finalizar la compra",
+    "checkout": "Finalizar Compra",
+    "clearCart": "Vaciar Carrito",
+    "removeItem": "Eliminar articulo"
+  },
+  "ProductCard": {
+    "addToCart": "Agregar al Carrito",
+    "trending": "En Tendencia",
+    "sold": "{count} vendidos",
+    "by": "por"
+  },
+  "Shop": {
+    "heading": "La Tienda",
+    "subtext": "Explora {count}+ disenos generados por IA en productos premium. Nuevos lanzamientos cada dia.",
+    "filters": "Filtros",
+    "category": "Categoria",
+    "style": "Estilo",
+    "priceRange": "Rango de Precio",
+    "popularTags": "Etiquetas Populares",
+    "productsFound": "{count} productos encontrados",
+    "sort": "Ordenar:",
+    "sortOptions": {
+      "trending": "En Tendencia",
+      "popular": "Mas Popular",
+      "priceLow": "Precio: Menor a Mayor",
+      "priceHigh": "Precio: Mayor a Menor"
+    },
+    "noProducts": "No se encontraron productos",
+    "noProductsHint": "Intenta ajustar tus filtros",
+    "scrollMore": "Desplaza para ver mas disenos...",
+    "categories": {
+      "all": "Todos",
+      "apparel": "Ropa",
+      "mugs": "Tazas",
+      "posters": "Posters",
+      "phoneCases": "Fundas"
+    },
+    "styles": {
+      "allStyles": "Todos los Estilos",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro",
+      "minimalist": "Minimalista",
+      "abstract": "Abstracto"
+    },
+    "priceRanges": {
+      "all": "Todos los Precios",
+      "under25": "Menos de $25",
+      "range25to40": "$25 - $40",
+      "over40": "Mas de $40"
+    }
+  },
+  "Collections": {
+    "badge": "Colecciones curadas por IA actualizadas cada hora",
+    "heading": "Colecciones en Tendencia",
+    "subtext": "Explora colecciones curadas de los disenos generados por IA mas populares, seleccionados por nuestro algoritmo de tendencias.",
+    "exploreCollection": "Explorar Coleccion",
+    "designs": "{count} disenos",
+    "sold": "{count} vendidos",
+    "by": "por",
+    "sortBy": "Ordenar por:",
+    "sortOptions": {
+      "trending": "Tendencia",
+      "sales": "Ventas",
+      "newest": "Mas Reciente"
+    },
+    "categories": {
+      "all": "Todos",
+      "apparel": "Ropa",
+      "mugs": "Tazas",
+      "posters": "Posters",
+      "phoneCases": "Fundas"
+    }
+  },
+  "Studio": {
+    "heading": "Estudio de Diseno",
+    "subtext": "Crea disenos personalizados con IA. Elige tu estilo, producto y colores, luego deja que nuestra IA haga la magia.",
+    "designPrompt": "Descripcion del Diseno",
+    "promptPlaceholder": "Describe tu idea de diseno... ej., 'Un gato cyberpunk neon montando una patineta por una ciudad retro al atardecer'",
+    "quickIdeas": "Ideas rapidas:",
+    "ideas": {
+      "i1": "Atardecer vaporwave",
+      "i2": "Gato espacial kawaii",
+      "i3": "Retrato de arte glitch",
+      "i4": "Dragon en ciudad neon"
+    },
+    "style": "Estilo",
+    "productType": "Tipo de Producto",
+    "colorPalette": "Paleta de Colores",
+    "generateDesign": "Generar Diseno",
+    "aiGenerating": "La IA Esta Generando Tus Disenos...",
+    "livePreview": "Vista Previa en Vivo",
+    "aiGenerated": "Generado por IA",
+    "creatingMasterpiece": "La IA esta creando tu obra maestra...",
+    "creatingWait": "Esto puede tomar 10-20 segundos",
+    "previewPlaceholder": "Tu diseno generado por IA aparecera aqui",
+    "previewHint": "Ingresa una descripcion y haz clic en Generar",
+    "palette": "Paleta {name}",
+    "aiDesignVariants": "Variantes de Diseno IA",
+    "clickToPreview": "Clic para previsualizar",
+    "orderNow": "Ordenar Ahora - ${price}",
+    "save": "Guardar",
+    "saved": "Guardado!",
+    "regenerate": "Regenerar con Misma Configuracion",
+    "errorMessage": "Error al generar disenos. Intenta de nuevo."
+  },
+  "HowItWorks": {
+    "badge": "De idea a producto en minutos, no semanas",
+    "heading": "Como",
+    "headingBrand": "TrendThread AI",
+    "headingEnd": "Funciona",
+    "subtext": "Reemplazamos el proceso tradicional de diseno a impresion con IA. El resultado? 100x mas rapido, 10x mas barato, infinitamente mas creativo.",
+    "step": "Paso",
+    "steps": {
+      "s1": {
+        "title": "Describe Tu Vision",
+        "description": "Escribe cualquier idea de diseno en espanol. Nuestra IA entiende descripciones complejas, estilos, estados de animo y esteticas. Puedes ser tan especifico o abstracto como quieras.",
+        "details": ["Descripciones en lenguaje natural", "Palabras clave de estilo y estado de animo", "Referencia a estilos artisticos existentes", "Soporte multilenguaje"]
+      },
+      "s2": {
+        "title": "La IA Genera Disenos",
+        "description": "Nuestro modelo de IA propietario genera 4 variantes de diseno unicas en menos de 10 segundos. Cada diseno es original, de alta resolucion y listo para imprimir. Elige tu favorito o genera mas.",
+        "details": ["4 variantes unicas por generacion", "Salida vectorial de alta resolucion", "Resultados precisos en estilo", "Regeneraciones ilimitadas (Pro)"]
+      },
+      "s3": {
+        "title": "Produccion de Impresion Premium",
+        "description": "Usamos impresion DTG (Directa a Prenda) y sublimacion de primera clase. Cada producto esta hecho con materiales premium y pasa por control de calidad antes del envio.",
+        "details": ["Impresion DTG y sublimacion", "Telas y materiales premium", "Inspeccion de control de calidad", "Tintas ecologicas"]
+      },
+      "s4": {
+        "title": "Envio Global Rapido",
+        "description": "Tu producto personalizado se envia en 2-5 dias habiles. Rastrea tu pedido en tiempo real. Enviamos a mas de 180 paises con opciones express y estandar.",
+        "details": ["Produccion de 2-5 dias", "Mas de 180 paises", "Rastreo en tiempo real", "Envio express disponible"]
+      }
+    },
+    "comparisonHeading": "POD Tradicional vs",
+    "comparisonBrand": "TrendThread AI",
+    "comparisonSubtext": "Descubre por que los creadores estan cambiando a impresion bajo demanda impulsada por IA.",
+    "comparisonFeature": "Caracteristica",
+    "comparisonTraditional": "POD Tradicional",
+    "comparison": {
+      "r1": { "feature": "Tiempo de creacion de diseno", "traditional": "2-5 dias", "trendthread": "10 segundos" },
+      "r2": { "feature": "Costo de diseno", "traditional": "$50-500+", "trendthread": "Gratis - $0.50" },
+      "r3": { "feature": "Habilidades de diseno necesarias", "traditional": "Profesional", "trendthread": "Ninguna" },
+      "r4": { "feature": "Maquetas de producto", "traditional": "Creacion manual", "trendthread": "Maqueta IA instantanea" },
+      "r5": { "feature": "Inventario requerido", "traditional": "Si, por adelantado", "trendthread": "Cero inventario" },
+      "r6": { "feature": "Pedido minimo", "traditional": "25-100 unidades", "trendthread": "1 unidad" },
+      "r7": { "feature": "Tiempo al mercado", "traditional": "2-4 semanas", "trendthread": "Minutos" }
+    },
+    "ctaHeading": "Listo para",
+    "ctaHighlight": "Comenzar?",
+    "ctaSubtext": "Crea tu primer diseno con IA en 10 segundos. Gratis, sin tarjeta de credito.",
+    "ctaButton": "Abrir Estudio de Diseno"
+  },
+  "Creators": {
+    "badge": "$3.2M+ pagados a creadores",
+    "heading": "Programa de Creadores",
+    "subtext": "Convierte tu creatividad en ingresos. Disena con IA, vende al mundo y gana hasta 20% de comision en cada venta.",
+    "stats": {
+      "activeCreators": "Creadores Activos",
+      "totalPayouts": "Pagos Totales",
+      "avgMonthly": "Ganancias Mensuales Prom.",
+      "topCreator": "Ganancias del Top Creador"
+    },
+    "commissionTiers": "Niveles de Comision",
+    "commissionSubtext": "Gana mas a medida que vendes mas. Simple.",
+    "tiers": {
+      "gold": { "name": "Oro", "requirement": "0-50 ventas/mes" },
+      "platinum": { "name": "Platino", "requirement": "51-200 ventas/mes" },
+      "diamond": { "name": "Diamante", "requirement": "200+ ventas/mes" }
+    },
+    "tierFeatures": {
+      "aiTools": "Acceso a herramientas de diseno IA",
+      "analytics": "Panel de analiticas",
+      "weeklyPayouts": "Pagos semanales",
+      "prioritySupport": "Soporte prioritario",
+      "featuredPlacement": "Ubicacion destacada",
+      "customStorefront": "Tienda personalizada"
+    },
+    "howToJoin": "Como Unirse",
+    "joinSteps": {
+      "s1": { "title": "Aplica", "desc": "Completa un formulario rapido de solicitud. La aprobacion toma menos de 24 horas." },
+      "s2": { "title": "Crea", "desc": "Usa nuestras herramientas de IA para generar disenos increibles y construir colecciones." },
+      "s3": { "title": "Comparte", "desc": "Comparte tus disenos en redes sociales, tu tienda o nuestro marketplace." },
+      "s4": { "title": "Gana", "desc": "Gana comisiones en cada venta. Recibe pagos semanales via PayPal o Stripe." }
+    },
+    "calculator": {
+      "heading": "Calculadora de Ganancias",
+      "subtext": "Mira cuanto podrias ganar como creador de TrendThread AI.",
+      "monthlyViews": "Visitas Mensuales a la Tienda",
+      "commissionTier": "Nivel de Comision",
+      "estSales": "Ventas Est.",
+      "monthlyEarnings": "Ganancias Mensuales",
+      "annualEarnings": "Ganancias Anuales",
+      "perMonth": "/mes"
+    },
+    "stories": "Historias de Creadores",
+    "topCreators": "Top Creadores",
+    "designs": "disenos",
+    "followers": "seguidores",
+    "earned": "Ganado:",
+    "applyNow": "Aplica Ahora",
+    "applySubtext": "Unete a nuestra comunidad de creadores y empieza a ganar hoy.",
+    "form": {
+      "fullName": "Nombre Completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo Electronico",
+      "emailPlaceholder": "tu@email.com",
+      "socialMedia": "Perfil de Redes Sociales",
+      "socialPlaceholder": "https://instagram.com/tuhandle",
+      "followerCount": "Cantidad de Seguidores",
+      "selectRange": "Seleccionar rango",
+      "range0to1k": "0 - 1,000",
+      "range1kto10k": "1,000 - 10,000",
+      "range10kto50k": "10,000 - 50,000",
+      "range50kto100k": "50,000 - 100,000",
+      "range100kPlus": "100,000+",
+      "niche": "Tu Nicho",
+      "nichePlaceholder": "ej., Moda, Gaming, Arte, Fitness",
+      "submit": "Enviar Solicitud"
+    },
+    "submitted": {
+      "title": "Solicitud Enviada!",
+      "text": "Revisaremos tu solicitud y te responderemos en 24 horas. Revisa tu correo para la confirmacion."
+    }
+  },
+  "Pricing": {
+    "heading": "Precios",
+    "headingHighlight": "Transparentes",
+    "headingEnd": "y Simples",
+    "subtext": "Comienza gratis, mejora cuando estes listo. Sin cargos ocultos, sin sorpresas.",
+    "monthly": "Mensual",
+    "annual": "Anual",
+    "annualDiscount": "-20%",
+    "billedAnnually": "/mes (facturado anualmente)",
+    "mostPopular": "Mas Popular",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "price": "$0",
+        "period": "para siempre",
+        "description": "Perfecto para probar la generacion de disenos con IA.",
+        "features": [
+          "10 disenos IA por dia",
+          "Exportacion en calidad estandar",
+          "5 tipos de productos",
+          "Opciones de estilo basicas",
+          "Soporte comunitario",
+          "Tarifas de envio estandar"
+        ],
+        "cta": "Comenzar Gratis"
+      },
+      "pro": {
+        "name": "Pro Creador",
+        "price": "$29",
+        "period": "/mes",
+        "description": "Para creadores listos para construir un negocio real de merch.",
+        "features": [
+          "Disenos IA ilimitados",
+          "Exportacion HD (4K)",
+          "Todos los tipos de productos",
+          "Todas las opciones de estilo + personalizadas",
+          "Soporte prioritario",
+          "Panel de analiticas",
+          "Listado en marketplace de creadores",
+          "10% de aumento en comision",
+          "Eliminacion de marca de agua",
+          "Generacion masiva (20 a la vez)"
+        ],
+        "cta": "Ir a Pro"
+      },
+      "business": {
+        "name": "Empresa",
+        "price": "$99",
+        "period": "/mes",
+        "description": "Para marcas y agencias escalando impresion bajo demanda.",
+        "features": [
+          "Todo en Pro Creador",
+          "Marca blanca",
+          "Acceso a API",
+          "Insertos de empaque personalizados",
+          "Gerente de cuenta dedicado",
+          "Descuentos por volumen (hasta 40%)",
+          "Cuentas de equipo (5 asientos)",
+          "Analiticas avanzadas",
+          "Cola de produccion prioritaria",
+          "Tipos de producto personalizados"
+        ],
+        "cta": "Comenzar Empresa"
+      }
+    },
+    "bulkPricing": "Precios por Volumen",
+    "bulkCalculator": "Calculadora",
+    "bulkSubtext": "Obtiene mejores tarifas con mayores volumenes de pedido. Hasta 40% de descuento.",
+    "orderQuantity": "Cantidad de Pedido",
+    "units": "unidades",
+    "off": "descuento",
+    "unitsPlus": "{count}+ unidades",
+    "perUnit": "Por Unidad",
+    "discount": "Descuento",
+    "total": "Total",
+    "enterprise": {
+      "heading": "Empresa",
+      "subtext": "Necesitas soluciones personalizadas para tu marca o agencia? 1,000+ unidades/mes? Creemos un plan personalizado para ti.",
+      "emailPlaceholder": "tu@empresa.com",
+      "contactSales": "Contactar Ventas",
+      "contactSent": "Nos pondremos en contacto en 24 horas!"
+    },
+    "faqHeading": "Preguntas",
+    "faqHighlight": "Frecuentes",
+    "faqs": {
+      "q1": { "q": "Como funciona el generador de disenos con IA?", "a": "Simplemente escribe una descripcion de tu idea de diseno, elige un estilo y tipo de producto, y nuestra IA genera cuatro disenos unicos en segundos. Luego puedes personalizar, ordenar o agregarlos a tu tienda." },
+      "q2": { "q": "Como es la calidad de impresion?", "a": "Usamos impresion DTG (Directa a Prenda) premium y sublimacion de alta calidad para todos los productos. Los colores son vibrantes, duraderos y resistentes al lavado. Cada pedido pasa por control de calidad antes del envio." },
+      "q3": { "q": "Cuanto tarda el envio?", "a": "El envio estandar toma 5-8 dias habiles dentro de EE.UU. El envio express (2-3 dias) esta disponible. Los pedidos internacionales llegan en 10-15 dias habiles." },
+      "q4": { "q": "Puedo vender disenos que creo en TrendThread AI?", "a": "Absolutamente! Unete a nuestro Programa de Creadores y gana 10-20% de comision en cada venta. Tu eres dueno de los derechos comerciales de cualquier diseno que generes en nuestra plataforma." },
+      "q5": { "q": "Hay un limite de disenos que puedo crear?", "a": "Las cuentas gratuitas pueden generar hasta 10 disenos por dia. Las cuentas Pro Creador obtienen generaciones ilimitadas, y las cuentas Empresa incluyen herramientas de generacion masiva." },
+      "q6": { "q": "Se integran con Shopify?", "a": "Si! Nuestra integracion con Shopify te permite enviar disenos directamente a tu tienda Shopify con un clic. Nosotros manejamos la impresion, empaque y envio automaticamente." },
+      "q7": { "q": "Que pasa si no estoy satisfecho con mi pedido?", "a": "Ofrecemos garantia de satisfaccion al 100%. Si hay algun problema con la calidad de impresion o defectos del producto, reimprimiremos o reembolsaremos tu pedido dentro de 30 dias." },
+      "q8": { "q": "Puedo usar TrendThread AI para mi marca existente?", "a": "Si! Las cuentas Empresa incluyen opciones de marca blanca con branding personalizado, insertos de empaque y tu logo en los recibos de envio." }
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Idioma"
+  },
+  "Common": {
+    "addedToCart": "{title} agregado al carrito!"
+  }
+}

@@ -1,35 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
-const footerLinks = {
-  Product: [
-    { label: "Design Studio", href: "/studio" },
-    { label: "Shop", href: "/shop" },
-    { label: "Collections", href: "/collections" },
-    { label: "Pricing", href: "/pricing" },
-  ],
-  Company: [
-    { label: "How It Works", href: "/how-it-works" },
-    { label: "Creator Program", href: "/creators" },
-    { label: "About Us", href: "#" },
-    { label: "Blog", href: "#" },
-  ],
-  Support: [
-    { label: "Help Center", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "Shipping Info", href: "#" },
-    { label: "Returns", href: "#" },
-  ],
-  Legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "DMCA", href: "#" },
-  ],
-};
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const socials = [
   { name: "Twitter/X", icon: "𝕏", href: "#" },
@@ -42,6 +16,7 @@ const socials = [
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const t = useTranslations("Footer");
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,20 +27,45 @@ export default function Footer() {
     }
   };
 
+  const footerLinks = {
+    [t("product")]: [
+      { label: t("links.designStudio"), href: "/studio" as const },
+      { label: t("links.shop"), href: "/shop" as const },
+      { label: t("links.collections"), href: "/collections" as const },
+      { label: t("links.pricing"), href: "/pricing" as const },
+    ],
+    [t("company")]: [
+      { label: t("links.howItWorks"), href: "/how-it-works" as const },
+      { label: t("links.creatorProgram"), href: "/creators" as const },
+      { label: t("links.aboutUs"), href: "/" as const },
+      { label: t("links.blog"), href: "/" as const },
+    ],
+    [t("support")]: [
+      { label: t("links.helpCenter"), href: "/" as const },
+      { label: t("links.contact"), href: "/" as const },
+      { label: t("links.shippingInfo"), href: "/" as const },
+      { label: t("links.returns"), href: "/" as const },
+    ],
+    [t("legal")]: [
+      { label: t("links.privacyPolicy"), href: "/" as const },
+      { label: t("links.termsOfService"), href: "/" as const },
+      { label: t("links.cookiePolicy"), href: "/" as const },
+      { label: t("links.dmca"), href: "/" as const },
+    ],
+  };
+
   return (
     <footer className="relative mt-20 border-t border-white/5">
-      {/* Gradient top line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neon-purple to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Newsletter section */}
         <div className="text-center mb-16">
           <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-            <span className="text-gradient">Stay Ahead of the Trends</span>
+            <span className="text-gradient">{t("newsletter.heading")}</span>
           </h3>
           <p className="text-gray-400 mb-6 max-w-md mx-auto">
-            Get weekly drops of trending designs, creator tips, and exclusive
-            deals.
+            {t("newsletter.subtext")}
           </p>
           <form
             onSubmit={handleSubscribe}
@@ -75,7 +75,7 @@ export default function Footer() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
+              placeholder={t("newsletter.placeholder")}
               required
               className="flex-1 px-4 py-3 rounded-xl bg-surface border border-surface-border text-white placeholder-gray-500 focus:outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all"
             />
@@ -85,7 +85,7 @@ export default function Footer() {
               type="submit"
               className="px-6 py-3 rounded-xl bg-gradient-to-r from-neon-purple to-neon-pink text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-shadow"
             >
-              {subscribed ? "Subscribed! ✅" : "Subscribe"}
+              {subscribed ? `${t("newsletter.subscribed")} ✅` : t("newsletter.subscribe")}
             </motion.button>
           </form>
         </div>
@@ -117,7 +117,7 @@ export default function Footer() {
             <span className="text-xl">🧵</span>
             <span className="font-bold text-gradient">TrendThread AI</span>
             <span className="text-sm text-gray-500">
-              &copy; 2026. All rights reserved.
+              &copy; {t("copyright")}
             </span>
           </div>
 

@@ -1,0 +1,457 @@
+{
+  "Navbar": {
+    "home": "首页",
+    "collections": "系列",
+    "shop": "商店",
+    "designStudio": "设计工作室",
+    "howItWorks": "使用方法",
+    "creators": "创作者",
+    "pricing": "定价",
+    "startCreating": "开始创作",
+    "openCart": "打开购物车",
+    "toggleMenu": "打开菜单"
+  },
+  "Hero": {
+    "badge": "已生成240万+设计，持续增长中",
+    "headlineDesign": "设计。",
+    "headlinePrint": "印刷。",
+    "headlineProfit": "盈利。",
+    "subtext": "用AI在几秒内将任何想法变成病毒式传播的商品设计。无需设计技能。按需印刷。全球发货。今天就开始你的品牌。"
+  },
+  "AIGenerator": {
+    "placeholder": "描述你梦想中的设计...",
+    "random": "随机",
+    "generate": "生成",
+    "generating": "生成中...",
+    "tryLabel": "试试：",
+    "resultsHeading": "AI生成设计",
+    "promptLabel": "提示词：",
+    "buyPrice": "购买 $29.99",
+    "addToStore": "添加到商店",
+    "regenerate": "生成更多变体",
+    "creatingDesign": "正在创建设计 {number}...",
+    "errorMessage": "设计生成失败。请重试。",
+    "samplePrompts": {
+      "p1": "霓虹城市中的赛博朋克猫",
+      "p2": "棕榈树下的复古日落",
+      "p3": "抽象几何面孔",
+      "p4": "可爱的太空宇航员",
+      "p5": "故障艺术蝴蝶翅膀",
+      "p6": "Y2K铬心图案",
+      "p7": "太空中喷火的龙",
+      "p8": "戴太阳镜的蒸汽波希腊雕像"
+    }
+  },
+  "Stats": {
+    "designsGenerated": "已生成设计",
+    "activeCreators": "活跃创作者",
+    "ordersShipped": "已发货订单",
+    "creatorPayouts": "创作者收入"
+  },
+  "Trending": {
+    "heading": "当前热门",
+    "subtext": "最热门的AI生成设计正在热卖。实时更新。",
+    "viewAll": "查看所有产品",
+    "tags": {
+      "all": "全部",
+      "apparel": "服装",
+      "mugs": "马克杯",
+      "posters": "海报",
+      "phoneCases": "手机壳",
+      "y2k": "Y2K",
+      "anime": "动漫",
+      "retro": "复古"
+    }
+  },
+  "HowItWorksPreview": {
+    "heading": "从创意到送货上门只需",
+    "headingHighlight": "4步",
+    "subtext": "创建和销售定制商品的最快方式。无需库存，无需烦恼。",
+    "learnMore": "了解更多关于我们的流程",
+    "steps": {
+      "s1": { "title": "输入你的想法", "desc": "用自然语言描述任何设计概念" },
+      "s2": { "title": "AI生成", "desc": "在10秒内获得4个独特设计" },
+      "s3": { "title": "我们印刷", "desc": "在优质产品上进行高级DTG印刷" },
+      "s4": { "title": "快速发货", "desc": "送到你的门口或你的客户" }
+    }
+  },
+  "Testimonials": {
+    "heading": "创作者",
+    "headingHighlight": "喜爱我们",
+    "subtext": "加入已经通过TrendThread AI赚钱的45,000多位创作者。",
+    "goTo": "转到评价 {number}"
+  },
+  "CTA": {
+    "heading": "准备好创建你的",
+    "headingHighlight": "第一个设计了吗？",
+    "subtext": "加入数千名通过AI生成设计赚钱的创作者。免费开始。无需信用卡。",
+    "startCreating": "免费开始创作",
+    "viewPricing": "查看定价"
+  },
+  "Footer": {
+    "newsletter": {
+      "heading": "走在潮流前沿",
+      "subtext": "每周获取热门设计、创作者技巧和独家优惠。",
+      "placeholder": "你的@email.com",
+      "subscribe": "订阅",
+      "subscribed": "已订阅！"
+    },
+    "product": "产品",
+    "company": "公司",
+    "support": "支持",
+    "legal": "法律",
+    "links": {
+      "designStudio": "设计工作室",
+      "shop": "商店",
+      "collections": "系列",
+      "pricing": "定价",
+      "howItWorks": "使用方法",
+      "creatorProgram": "创作者计划",
+      "aboutUs": "关于我们",
+      "blog": "博客",
+      "helpCenter": "帮助中心",
+      "contact": "联系我们",
+      "shippingInfo": "配送信息",
+      "returns": "退货",
+      "privacyPolicy": "隐私政策",
+      "termsOfService": "服务条款",
+      "cookiePolicy": "Cookie政策",
+      "dmca": "DMCA"
+    },
+    "copyright": "2026. 保留所有权利。"
+  },
+  "Cart": {
+    "yourCart": "购物车",
+    "closeCart": "关闭购物车",
+    "emptyTitle": "购物车是空的",
+    "emptySubtext": "开始添加精彩设计吧！",
+    "by": "作者",
+    "subtotal": "小计",
+    "shippingNote": "运费将在结账时计算",
+    "checkout": "结账",
+    "clearCart": "清空购物车",
+    "removeItem": "删除商品"
+  },
+  "ProductCard": {
+    "addToCart": "加入购物车",
+    "trending": "热门",
+    "sold": "已售{count}件",
+    "by": "作者"
+  },
+  "Shop": {
+    "heading": "商店",
+    "subtext": "浏览{count}+款高级产品上的AI生成设计。每天上新。",
+    "filters": "筛选",
+    "category": "类别",
+    "style": "风格",
+    "priceRange": "价格范围",
+    "popularTags": "热门标签",
+    "productsFound": "找到{count}件产品",
+    "sort": "排序：",
+    "sortOptions": {
+      "trending": "热门",
+      "popular": "最受欢迎",
+      "priceLow": "价格：从低到高",
+      "priceHigh": "价格：从高到低"
+    },
+    "noProducts": "未找到产品",
+    "noProductsHint": "尝试调整筛选条件",
+    "scrollMore": "滚动查看更多设计...",
+    "categories": {
+      "all": "全部",
+      "apparel": "服装",
+      "mugs": "马克杯",
+      "posters": "海报",
+      "phoneCases": "手机壳"
+    },
+    "styles": {
+      "allStyles": "所有风格",
+      "y2k": "Y2K",
+      "anime": "动漫",
+      "retro": "复古",
+      "minimalist": "极简",
+      "abstract": "抽象"
+    },
+    "priceRanges": {
+      "all": "所有价格",
+      "under25": "$25以下",
+      "range25to40": "$25 - $40",
+      "over40": "$40以上"
+    }
+  },
+  "Collections": {
+    "badge": "AI精选系列，每小时更新",
+    "heading": "热门系列",
+    "subtext": "探索由我们的趋势算法精选的最热门AI生成设计的策展系列。",
+    "exploreCollection": "探索系列",
+    "designs": "{count}个设计",
+    "sold": "已售{count}件",
+    "by": "作者",
+    "sortBy": "排序：",
+    "sortOptions": {
+      "trending": "热门",
+      "sales": "销量",
+      "newest": "最新"
+    },
+    "categories": {
+      "all": "全部",
+      "apparel": "服装",
+      "mugs": "马克杯",
+      "posters": "海报",
+      "phoneCases": "手机壳"
+    }
+  },
+  "Studio": {
+    "heading": "设计工作室",
+    "subtext": "用AI创建自定义设计。选择你的风格、产品和颜色，然后让我们的AI施展魔法。",
+    "designPrompt": "设计提示词",
+    "promptPlaceholder": "描述你的设计想法... 例如：'一只霓虹赛博朋克猫骑着滑板穿过复古城市'",
+    "quickIdeas": "快速想法：",
+    "ideas": {
+      "i1": "蒸汽波日落",
+      "i2": "可爱太空猫",
+      "i3": "故障艺术肖像",
+      "i4": "霓虹城市中的龙"
+    },
+    "style": "风格",
+    "productType": "产品类型",
+    "colorPalette": "调色板",
+    "generateDesign": "生成设计",
+    "aiGenerating": "AI正在生成你的设计...",
+    "livePreview": "实时预览",
+    "aiGenerated": "AI生成",
+    "creatingMasterpiece": "AI正在创造你的杰作...",
+    "creatingWait": "这可能需要10-20秒",
+    "previewPlaceholder": "你的AI生成设计将显示在这里",
+    "previewHint": "输入提示词并点击生成",
+    "palette": "{name}调色板",
+    "aiDesignVariants": "AI设计变体",
+    "clickToPreview": "点击预览",
+    "orderNow": "立即下单 - ${price}",
+    "save": "保存",
+    "saved": "已保存！",
+    "regenerate": "使用相同设置重新生成",
+    "errorMessage": "设计生成失败。请重试。"
+  },
+  "HowItWorks": {
+    "badge": "从想法到产品只需几分钟，而非几周",
+    "heading": "",
+    "headingBrand": "TrendThread AI",
+    "headingEnd": "如何运作",
+    "subtext": "我们用AI替代了传统的设计到印刷流程。结果？快100倍，便宜10倍，无限创意。",
+    "step": "步骤",
+    "steps": {
+      "s1": {
+        "title": "描述你的愿景",
+        "description": "用中文输入任何设计想法。我们的AI理解复杂的描述、风格、情绪和美学。你可以随意具体或抽象。",
+        "details": ["自然语言提示", "风格和情绪关键词", "参考现有艺术风格", "多语言支持"]
+      },
+      "s2": {
+        "title": "AI生成设计",
+        "description": "我们专有的AI模型在10秒内生成4个独特的设计变体。每个设计都是原创、高分辨率、可印刷的。选择你最喜欢的或生成更多。",
+        "details": ["每次生成4个独特变体", "高分辨率矢量输出", "风格精确的结果", "无限重新生成（Pro）"]
+      },
+      "s3": {
+        "title": "高级印刷生产",
+        "description": "我们使用行业领先的DTG和热升华印刷。每件产品都使用优质材料制造，并在发货前通过质量检查。",
+        "details": ["DTG和热升华印刷", "优质面料和材料", "质量检查", "环保墨水"]
+      },
+      "s4": {
+        "title": "快速全球配送",
+        "description": "你的定制产品在2-5个工作日内发货。实时跟踪订单。我们通过快递和标准选项向180多个国家发货。",
+        "details": ["2-5天生产", "180多个国家", "实时跟踪", "快递可用"]
+      }
+    },
+    "comparisonHeading": "传统POD vs",
+    "comparisonBrand": "TrendThread AI",
+    "comparisonSubtext": "看看为什么创作者正在转向AI驱动的按需印刷。",
+    "comparisonFeature": "功能",
+    "comparisonTraditional": "传统POD",
+    "comparison": {
+      "r1": { "feature": "设计创建时间", "traditional": "2-5天", "trendthread": "10秒" },
+      "r2": { "feature": "设计成本", "traditional": "$50-500+", "trendthread": "免费 - $0.50" },
+      "r3": { "feature": "所需技能", "traditional": "专业", "trendthread": "无" },
+      "r4": { "feature": "产品样机", "traditional": "手动创建", "trendthread": "即时AI样机" },
+      "r5": { "feature": "需要库存", "traditional": "是，预付", "trendthread": "零库存" },
+      "r6": { "feature": "最低订单", "traditional": "25-100件", "trendthread": "1件" },
+      "r7": { "feature": "上市时间", "traditional": "2-4周", "trendthread": "几分钟" }
+    },
+    "ctaHeading": "准备好",
+    "ctaHighlight": "开始了吗？",
+    "ctaSubtext": "10秒内创建你的第一个AI设计。免费，无需信用卡。",
+    "ctaButton": "打开设计工作室"
+  },
+  "Creators": {
+    "badge": "已向创作者支付$320万+",
+    "heading": "创作者计划",
+    "subtext": "将创意转化为收入。用AI设计，向全世界销售，每笔销售赚取高达20%的佣金。",
+    "stats": {
+      "activeCreators": "活跃创作者",
+      "totalPayouts": "总支付额",
+      "avgMonthly": "平均月收入",
+      "topCreator": "顶级创作者收入"
+    },
+    "commissionTiers": "佣金等级",
+    "commissionSubtext": "卖得越多，赚得越多。就这么简单。",
+    "tiers": {
+      "gold": { "name": "黄金", "requirement": "每月0-50笔销售" },
+      "platinum": { "name": "白金", "requirement": "每月51-200笔销售" },
+      "diamond": { "name": "钻石", "requirement": "每月200+笔销售" }
+    },
+    "tierFeatures": {
+      "aiTools": "AI设计工具访问权",
+      "analytics": "数据分析面板",
+      "weeklyPayouts": "每周支付",
+      "prioritySupport": "优先支持",
+      "featuredPlacement": "推荐位置",
+      "customStorefront": "自定义店面"
+    },
+    "howToJoin": "如何加入",
+    "joinSteps": {
+      "s1": { "title": "申请", "desc": "填写简短的申请表。24小时内获得批准。" },
+      "s2": { "title": "创作", "desc": "使用我们的AI工具生成精彩设计并建立系列。" },
+      "s3": { "title": "分享", "desc": "在社交媒体、你的商店或我们的市场上分享你的设计。" },
+      "s4": { "title": "赚钱", "desc": "每笔销售赚取佣金。通过PayPal或Stripe每周支付。" }
+    },
+    "calculator": {
+      "heading": "收入计算器",
+      "subtext": "看看作为TrendThread AI创作者你能赚多少。",
+      "monthlyViews": "月商店访问量",
+      "commissionTier": "佣金等级",
+      "estSales": "预计销售",
+      "monthlyEarnings": "月收入",
+      "annualEarnings": "年收入",
+      "perMonth": "/月"
+    },
+    "stories": "创作者故事",
+    "topCreators": "顶级创作者",
+    "designs": "设计",
+    "followers": "粉丝",
+    "earned": "收入：",
+    "applyNow": "立即申请",
+    "applySubtext": "加入我们的创作者社区，今天就开始赚钱。",
+    "form": {
+      "fullName": "全名",
+      "namePlaceholder": "你的名字",
+      "email": "电子邮件",
+      "emailPlaceholder": "你@email.com",
+      "socialMedia": "社交媒体主页",
+      "socialPlaceholder": "https://instagram.com/yourhandle",
+      "followerCount": "粉丝数量",
+      "selectRange": "选择范围",
+      "range0to1k": "0 - 1,000",
+      "range1kto10k": "1,000 - 10,000",
+      "range10kto50k": "10,000 - 50,000",
+      "range50kto100k": "50,000 - 100,000",
+      "range100kPlus": "100,000+",
+      "niche": "你的领域",
+      "nichePlaceholder": "例如：时尚、游戏、艺术、健身",
+      "submit": "提交申请"
+    },
+    "submitted": {
+      "title": "申请已提交！",
+      "text": "我们将在24小时内审核您的申请并与您联系。请查看确认邮件。"
+    }
+  },
+  "Pricing": {
+    "heading": "简单",
+    "headingHighlight": "透明的",
+    "headingEnd": "定价",
+    "subtext": "免费开始，准备好后升级。没有隐藏费用，没有意外。",
+    "monthly": "月付",
+    "annual": "年付",
+    "annualDiscount": "-20%",
+    "billedAnnually": "/月（按年计费）",
+    "mostPopular": "最受欢迎",
+    "plans": {
+      "free": {
+        "name": "免费",
+        "price": "$0",
+        "period": "永久",
+        "description": "非常适合试用AI设计生成。",
+        "features": [
+          "每天10个AI设计",
+          "标准质量导出",
+          "5种产品类型",
+          "基本风格选项",
+          "社区支持",
+          "标准运费"
+        ],
+        "cta": "免费开始"
+      },
+      "pro": {
+        "name": "Pro创作者",
+        "price": "$29",
+        "period": "/月",
+        "description": "适合准备建立真正商品业务的创作者。",
+        "features": [
+          "无限AI设计",
+          "HD质量导出（4K）",
+          "所有产品类型",
+          "所有风格选项+自定义",
+          "优先支持",
+          "数据分析面板",
+          "创作者市场上架",
+          "10%佣金提升",
+          "去除水印",
+          "批量生成（一次20个）"
+        ],
+        "cta": "升级Pro"
+      },
+      "business": {
+        "name": "商业版",
+        "price": "$99",
+        "period": "/月",
+        "description": "适合扩展按需印刷的品牌和机构。",
+        "features": [
+          "Pro创作者的所有功能",
+          "白标品牌",
+          "API访问",
+          "自定义包装插页",
+          "专属客户经理",
+          "批量折扣（最高40%）",
+          "团队账户（5个席位）",
+          "高级分析",
+          "优先生产队列",
+          "自定义产品类型"
+        ],
+        "cta": "开始商业版"
+      }
+    },
+    "bulkPricing": "批量定价",
+    "bulkCalculator": "计算器",
+    "bulkSubtext": "更大的订单量获得更好的价格。最高40%折扣。",
+    "orderQuantity": "订单数量",
+    "units": "件",
+    "off": "折扣",
+    "unitsPlus": "{count}件以上",
+    "perUnit": "单价",
+    "discount": "折扣",
+    "total": "总计",
+    "enterprise": {
+      "heading": "企业版",
+      "subtext": "需要为你的品牌或机构定制解决方案？每月1,000件以上？让我们为你制定定制计划。",
+      "emailPlaceholder": "你@公司.com",
+      "contactSales": "联系销售",
+      "contactSent": "我们将在24小时内与您联系！"
+    },
+    "faqHeading": "常见",
+    "faqHighlight": "问题",
+    "faqs": {
+      "q1": { "q": "AI设计生成器如何工作？", "a": "只需输入描述你设计想法的文字提示，选择风格和产品类型，我们的AI就会在几秒内生成四个独特的设计。然后你可以自定义、下单或将它们添加到你的商店。" },
+      "q2": { "q": "印刷质量如何？", "a": "我们对所有产品使用高级DTG印刷和高质量热升华印刷。颜色鲜艳、耐用、耐洗。每个订单在发货前都会经过质量检查。" },
+      "q3": { "q": "配送需要多长时间？", "a": "美国境内标准配送需要5-8个工作日。可选快递（2-3天）。国际订单通常在10-15个工作日内送达。" },
+      "q4": { "q": "我可以出售在TrendThread AI上创建的设计吗？", "a": "当然可以！加入我们的创作者计划，每笔销售赚取10-20%的佣金。你拥有在我们平台上生成的任何设计的商业权利。" },
+      "q5": { "q": "我可以创建的设计数量有限制吗？", "a": "免费账户每天最多生成10个设计。Pro创作者账户可无限生成，商业账户包含批量生成工具。" },
+      "q6": { "q": "你们与Shopify集成吗？", "a": "是的！我们的Shopify集成让你一键将设计直接推送到你的Shopify商店。我们自动处理印刷、包装和配送。" },
+      "q7": { "q": "如果我对订单不满意怎么办？", "a": "我们提供100%满意保证。如果印刷质量或产品缺陷有任何问题，我们将在30天内重新印刷或退款。" },
+      "q8": { "q": "我可以将TrendThread AI用于现有品牌吗？", "a": "可以！商业账户包含白标选项，提供自定义品牌、包装插页和配送单上的你的标志。" }
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "语言"
+  },
+  "Common": {
+    "addedToCart": "{title}已添加到购物车！"
+  }
+}

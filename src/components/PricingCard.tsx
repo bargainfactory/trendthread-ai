@@ -10,6 +10,7 @@ interface PricingCardProps {
   features: string[];
   cta: string;
   popular?: boolean;
+  popularLabel?: string;
   index?: number;
 }
 
@@ -21,6 +22,7 @@ export default function PricingCard({
   features,
   cta,
   popular = false,
+  popularLabel = "Most Popular",
   index = 0,
 }: PricingCardProps) {
   return (
@@ -37,7 +39,7 @@ export default function PricingCard({
     >
       {popular && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink text-white text-xs font-bold">
-          Most Popular
+          {popularLabel}
         </div>
       )}
 

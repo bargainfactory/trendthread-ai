@@ -1,23 +1,26 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useCart } from "@/lib/cart-context";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/collections", label: "Collections" },
-  { href: "/shop", label: "Shop" },
-  { href: "/studio", label: "Design Studio" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/creators", label: "Creators" },
-  { href: "/pricing", label: "Pricing" },
-];
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { totalItems, setIsOpen } = useCart();
+  const t = useTranslations("Navbar");
+
+  const navLinks = [
+    { href: "/" as const, label: t("home") },
+    { href: "/collections" as const, label: t("collections") },
+    { href: "/shop" as const, label: t("shop") },
+    { href: "/studio" as const, label: t("designStudio") },
+    { href: "/how-it-works" as const, label: t("howItWorks") },
+    { href: "/creators" as const, label: t("creators") },
+    { href: "/pricing" as const, label: t("pricing") },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-strong">
@@ -46,11 +49,14 @@ export default function Navbar() {
 
           {/* Right side */}
           <div className="flex items-center gap-3">
+            {/* Language switcher */}
+            <LanguageSwitcher />
+
             {/* Cart */}
             <button
               onClick={() => setIsOpen(true)}
               className="relative p-2 text-gray-300 hover:text-white transition-colors"
-              aria-label="Open cart"
+              aria-label={t("openCart")}
             >
               <svg
                 className="w-6 h-6"
@@ -81,7 +87,7 @@ export default function Navbar() {
               href="/studio"
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink text-white text-sm font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105"
             >
-              <span>Start Creating</span>
+              <span>{t("startCreating")}</span>
               <span>✨</span>
             </Link>
 
@@ -89,7 +95,7 @@ export default function Navbar() {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg:hidden p-2 text-gray-300 hover:text-white"
-              aria-label="Toggle menu"
+              aria-label={t("toggleMenu")}
             >
               <svg
                 className="w-6 h-6"
@@ -143,7 +149,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="block mt-3 text-center px-4 py-2 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink text-white font-semibold"
               >
-                Start Creating ✨
+                {t("startCreating")} ✨
               </Link>
             </div>
           </motion.div>

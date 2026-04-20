@@ -2,20 +2,17 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { creators } from "@/lib/mock-data";
 
-const tiers = [
-  { name: "Gold", commission: 10, requirement: "0-50 sales/month", color: "text-yellow-400", bg: "bg-yellow-400/10", border: "border-yellow-400/30" },
-  { name: "Platinum", commission: 15, requirement: "51-200 sales/month", color: "text-gray-300", bg: "bg-gray-300/10", border: "border-gray-300/30" },
-  { name: "Diamond", commission: 20, requirement: "200+ sales/month", color: "text-cyan-400", bg: "bg-cyan-400/10", border: "border-cyan-400/30" },
+const tierData = [
+  { key: "gold", commission: 10, color: "text-yellow-400", bg: "bg-yellow-400/10", border: "border-yellow-400/30" },
+  { key: "platinum", commission: 15, color: "text-gray-300", bg: "bg-gray-300/10", border: "border-gray-300/30" },
+  { key: "diamond", commission: 20, color: "text-cyan-400", bg: "bg-cyan-400/10", border: "border-cyan-400/30" },
 ];
 
-const steps = [
-  { icon: "📝", title: "Apply", desc: "Fill out a quick application form. Approval takes under 24 hours." },
-  { icon: "🎨", title: "Create", desc: "Use our AI tools to generate amazing designs and build collections." },
-  { icon: "📢", title: "Share", desc: "Share your designs on social media, your store, or our marketplace." },
-  { icon: "💰", title: "Earn", desc: "Earn commissions on every sale. Get paid weekly via PayPal or Stripe." },
-];
+const joinStepKeys = ["s1", "s2", "s3", "s4"] as const;
+const joinStepIcons = ["📝", "🎨", "📢", "💰"];
 
 const creatorTestimonials = [
   { name: "PixelQueen", text: "I went from zero to $12K/month in 3 months. The AI tools make design creation effortless. Best decision I ever made.", avatar: "👑", earned: "$42,450" },
@@ -24,6 +21,7 @@ const creatorTestimonials = [
 ];
 
 export default function CreatorsPage() {
+  const t = useTranslations("Creators");
   const [monthlyViews, setMonthlyViews] = useState(10000);
   const [conversionRate] = useState(2.5);
   const [avgPrice] = useState(30);
@@ -57,14 +55,13 @@ export default function CreatorsPage() {
         <div className="max-w-5xl mx-auto relative text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-6">
-              <span>💰</span> $3.2M+ paid out to creators
+              <span>💰</span> {t("badge")}
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              <span className="text-gradient">Creator Program</span>
+              <span className="text-gradient">{t("heading")}</span>
             </h1>
             <p className="text-gray-400 max-w-xl mx-auto text-lg">
-              Turn your creativity into income. Design with AI, sell to the world,
-              and earn up to 20% commission on every sale.
+              {t("subtext")}
             </p>
           </motion.div>
         </div>
@@ -74,14 +71,14 @@ export default function CreatorsPage() {
       <section className="px-4 pb-16">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { label: "Active Creators", value: "45,200+", icon: "🎨" },
-              { label: "Total Payouts", value: "$3.2M+", icon: "💰" },
-              { label: "Avg. Monthly Earnings", value: "$840", icon: "📈" },
-              { label: "Top Creator Earnings", value: "$15,670/mo", icon: "🏆" },
-            ].map((stat, i) => (
+            {([
+              { labelKey: "stats.activeCreators", value: "45,200+", icon: "🎨" },
+              { labelKey: "stats.totalPayouts", value: "$3.2M+", icon: "💰" },
+              { labelKey: "stats.avgMonthly", value: "$840", icon: "📈" },
+              { labelKey: "stats.topCreator", value: "$15,670/mo", icon: "🏆" },
+            ] as const).map((stat, i) => (
               <motion.div
-                key={stat.label}
+                key={stat.labelKey}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -90,7 +87,7 @@ export default function CreatorsPage() {
               >
                 <span className="text-2xl block mb-2">{stat.icon}</span>
                 <p className="text-xl font-bold text-white">{stat.value}</p>
-                <p className="text-xs text-gray-400 mt-1">{stat.label}</p>
+                <p className="text-xs text-gray-400 mt-1">{t(stat.labelKey)}</p>
               </motion.div>
             ))}
           </div>
@@ -107,15 +104,15 @@ export default function CreatorsPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Commission <span className="text-gradient">Tiers</span>
+              {t("commissionTiers").split(" ").slice(0, -1).join(" ")} <span className="text-gradient">{t("commissionTiers").split(" ").pop()}</span>
             </h2>
-            <p className="text-gray-400">Earn more as you sell more. Simple.</p>
+            <p className="text-gray-400">{t("commissionSubtext")}</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {tiers.map((tier, i) => (
+            {tierData.map((tier, i) => (
               <motion.div
-                key={tier.name}
+                key={tier.key}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -126,16 +123,16 @@ export default function CreatorsPage() {
                   {tier.commission}%
                 </span>
                 <h3 className="text-xl font-bold text-white mt-2 mb-1">
-                  {tier.name}
+                  {t(`tiers.${tier.key}.name`)}
                 </h3>
-                <p className="text-sm text-gray-400 mb-4">{tier.requirement}</p>
+                <p className="text-sm text-gray-400 mb-4">{t(`tiers.${tier.key}.requirement`)}</p>
                 <div className="space-y-2 text-sm text-gray-300">
-                  <p>✓ AI design tools access</p>
-                  <p>✓ Analytics dashboard</p>
-                  <p>✓ Weekly payouts</p>
-                  {tier.name !== "Gold" && <p>✓ Priority support</p>}
-                  {tier.name === "Diamond" && <p>✓ Featured placement</p>}
-                  {tier.name === "Diamond" && <p>✓ Custom storefront</p>}
+                  <p>✓ {t("tierFeatures.aiTools")}</p>
+                  <p>✓ {t("tierFeatures.analytics")}</p>
+                  <p>✓ {t("tierFeatures.weeklyPayouts")}</p>
+                  {tier.key !== "gold" && <p>✓ {t("tierFeatures.prioritySupport")}</p>}
+                  {tier.key === "diamond" && <p>✓ {t("tierFeatures.featuredPlacement")}</p>}
+                  {tier.key === "diamond" && <p>✓ {t("tierFeatures.customStorefront")}</p>}
                 </div>
               </motion.div>
             ))}
@@ -154,14 +151,14 @@ export default function CreatorsPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              How to <span className="text-gradient">Join</span>
+              {t("howToJoin").split(" ").slice(0, -1).join(" ")} <span className="text-gradient">{t("howToJoin").split(" ").pop()}</span>
             </h2>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {steps.map((step, i) => (
+            {joinStepKeys.map((key, i) => (
               <motion.div
-                key={step.title}
+                key={key}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -169,13 +166,13 @@ export default function CreatorsPage() {
                 className="text-center"
               >
                 <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-surface border border-surface-border mb-4">
-                  <span className="text-2xl">{step.icon}</span>
+                  <span className="text-2xl">{joinStepIcons[i]}</span>
                   <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-gradient-to-r from-neon-purple to-neon-pink text-white text-xs font-bold flex items-center justify-center">
                     {i + 1}
                   </span>
                 </div>
-                <h3 className="font-semibold text-white mb-1">{step.title}</h3>
-                <p className="text-sm text-gray-400">{step.desc}</p>
+                <h3 className="font-semibold text-white mb-1">{t(`joinSteps.${key}.title`)}</h3>
+                <p className="text-sm text-gray-400">{t(`joinSteps.${key}.desc`)}</p>
               </motion.div>
             ))}
           </div>
@@ -192,9 +189,9 @@ export default function CreatorsPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              <span className="text-gradient">Earnings Calculator</span> 💰
+              <span className="text-gradient">{t("calculator.heading")}</span> 💰
             </h2>
-            <p className="text-gray-400">See how much you could earn as a TrendThread AI creator.</p>
+            <p className="text-gray-400">{t("calculator.subtext")}</p>
           </motion.div>
 
           <div className="rounded-2xl bg-surface border border-surface-border p-6 md:p-8">
@@ -202,7 +199,7 @@ export default function CreatorsPage() {
               {/* Monthly views slider */}
               <div>
                 <div className="flex justify-between mb-2">
-                  <label className="text-sm text-gray-300">Monthly Store Views</label>
+                  <label className="text-sm text-gray-300">{t("calculator.monthlyViews")}</label>
                   <span className="text-sm font-semibold text-neon-purple">
                     {monthlyViews.toLocaleString()}
                   </span>
@@ -223,7 +220,7 @@ export default function CreatorsPage() {
 
               {/* Commission tier */}
               <div>
-                <label className="text-sm text-gray-300 block mb-2">Commission Tier</label>
+                <label className="text-sm text-gray-300 block mb-2">{t("calculator.commissionTier")}</label>
                 <div className="flex gap-2">
                   {[10, 15, 20].map((rate) => (
                     <button
@@ -244,17 +241,17 @@ export default function CreatorsPage() {
               {/* Results */}
               <div className="grid grid-cols-3 gap-4 pt-4 border-t border-surface-border">
                 <div className="text-center">
-                  <p className="text-xs text-gray-500 mb-1">Est. Sales</p>
-                  <p className="text-xl font-bold text-white">{estimatedSales}/mo</p>
+                  <p className="text-xs text-gray-500 mb-1">{t("calculator.estSales")}</p>
+                  <p className="text-xl font-bold text-white">{estimatedSales}{t("calculator.perMonth")}</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-xs text-gray-500 mb-1">Monthly Earnings</p>
+                  <p className="text-xs text-gray-500 mb-1">{t("calculator.monthlyEarnings")}</p>
                   <p className="text-xl font-bold text-neon-purple">
                     ${estimatedEarnings.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                   </p>
                 </div>
                 <div className="text-center">
-                  <p className="text-xs text-gray-500 mb-1">Annual Earnings</p>
+                  <p className="text-xs text-gray-500 mb-1">{t("calculator.annualEarnings")}</p>
                   <p className="text-xl font-bold text-neon-pink">
                     ${(estimatedEarnings * 12).toLocaleString(undefined, { maximumFractionDigits: 0 })}
                   </p>
@@ -275,14 +272,14 @@ export default function CreatorsPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Creator <span className="text-gradient">Stories</span>
+              {t("stories").split(" ").slice(0, -1).join(" ")} <span className="text-gradient">{t("stories").split(" ").pop()}</span>
             </h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {creatorTestimonials.map((t, i) => (
+            {creatorTestimonials.map((ct, i) => (
               <motion.div
-                key={t.name}
+                key={ct.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -290,14 +287,14 @@ export default function CreatorsPage() {
                 className="rounded-2xl glass p-6 card-hover"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">{t.avatar}</span>
+                  <span className="text-3xl">{ct.avatar}</span>
                   <div>
-                    <p className="font-semibold text-white">{t.name}</p>
-                    <p className="text-xs text-neon-purple">Earned: {t.earned}</p>
+                    <p className="font-semibold text-white">{ct.name}</p>
+                    <p className="text-xs text-neon-purple">{t("earned")} {ct.earned}</p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed italic">
-                  &ldquo;{t.text}&rdquo;
+                  &ldquo;{ct.text}&rdquo;
                 </p>
               </motion.div>
             ))}
@@ -315,7 +312,7 @@ export default function CreatorsPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Top <span className="text-gradient">Creators</span> 🏆
+              {t("topCreators").split(" ").slice(0, -1).join(" ")} <span className="text-gradient">{t("topCreators").split(" ").pop()}</span> 🏆
             </h2>
           </motion.div>
 
@@ -338,7 +335,7 @@ export default function CreatorsPage() {
                   <div className="flex-1">
                     <p className="font-semibold text-white">{creator.name}</p>
                     <p className="text-xs text-gray-400">
-                      {creator.designs} designs · {creator.followers.toLocaleString()} followers
+                      {creator.designs} {t("designs")} · {creator.followers.toLocaleString()} {t("followers")}
                     </p>
                   </div>
                   <div className="text-right">
@@ -349,7 +346,7 @@ export default function CreatorsPage() {
                       creator.tier === "diamond" ? "text-cyan-400" :
                       creator.tier === "platinum" ? "text-gray-300" : "text-yellow-400"
                     }`}>
-                      {creator.tier.charAt(0).toUpperCase() + creator.tier.slice(1)}
+                      {t(`tiers.${creator.tier}.name`)}
                     </p>
                   </div>
                 </motion.div>
@@ -369,10 +366,10 @@ export default function CreatorsPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              <span className="text-gradient">Apply Now</span> 🚀
+              <span className="text-gradient">{t("applyNow")}</span> 🚀
             </h2>
             <p className="text-gray-400">
-              Join our creator community and start earning today.
+              {t("applySubtext")}
             </p>
           </motion.div>
 
@@ -383,69 +380,68 @@ export default function CreatorsPage() {
               className="rounded-2xl bg-surface border border-green-500/30 p-8 text-center"
             >
               <span className="text-5xl block mb-4">🎉</span>
-              <h3 className="text-xl font-bold text-white mb-2">Application Submitted!</h3>
+              <h3 className="text-xl font-bold text-white mb-2">{t("submitted.title")}</h3>
               <p className="text-gray-400">
-                We will review your application and get back to you within 24 hours.
-                Check your email for confirmation.
+                {t("submitted.text")}
               </p>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="rounded-2xl bg-surface border border-surface-border p-6 md:p-8 space-y-4">
               <div>
-                <label className="block text-sm text-gray-300 mb-1">Full Name</label>
+                <label className="block text-sm text-gray-300 mb-1">{t("form.fullName")}</label>
                 <input
                   type="text"
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-surface-light border border-surface-border text-white placeholder-gray-500 focus:outline-none focus:border-neon-purple transition-all"
-                  placeholder="Your name"
+                  placeholder={t("form.namePlaceholder")}
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-300 mb-1">Email</label>
+                <label className="block text-sm text-gray-300 mb-1">{t("form.email")}</label>
                 <input
                   type="email"
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-surface-light border border-surface-border text-white placeholder-gray-500 focus:outline-none focus:border-neon-purple transition-all"
-                  placeholder="you@email.com"
+                  placeholder={t("form.emailPlaceholder")}
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-300 mb-1">Social Media Profile</label>
+                <label className="block text-sm text-gray-300 mb-1">{t("form.socialMedia")}</label>
                 <input
                   type="url"
                   value={formData.social}
                   onChange={(e) => setFormData({ ...formData, social: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-surface-light border border-surface-border text-white placeholder-gray-500 focus:outline-none focus:border-neon-purple transition-all"
-                  placeholder="https://instagram.com/yourhandle"
+                  placeholder={t("form.socialPlaceholder")}
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-300 mb-1">Follower Count</label>
+                <label className="block text-sm text-gray-300 mb-1">{t("form.followerCount")}</label>
                 <select
                   value={formData.followers}
                   onChange={(e) => setFormData({ ...formData, followers: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-surface-light border border-surface-border text-white focus:outline-none focus:border-neon-purple transition-all"
                 >
-                  <option value="">Select range</option>
-                  <option value="0-1k">0 - 1,000</option>
-                  <option value="1k-10k">1,000 - 10,000</option>
-                  <option value="10k-50k">10,000 - 50,000</option>
-                  <option value="50k-100k">50,000 - 100,000</option>
-                  <option value="100k+">100,000+</option>
+                  <option value="">{t("form.selectRange")}</option>
+                  <option value="0-1k">{t("form.range0to1k")}</option>
+                  <option value="1k-10k">{t("form.range1kto10k")}</option>
+                  <option value="10k-50k">{t("form.range10kto50k")}</option>
+                  <option value="50k-100k">{t("form.range50kto100k")}</option>
+                  <option value="100k+">{t("form.range100kPlus")}</option>
                 </select>
               </div>
               <div>
-                <label className="block text-sm text-gray-300 mb-1">Your Niche</label>
+                <label className="block text-sm text-gray-300 mb-1">{t("form.niche")}</label>
                 <input
                   type="text"
                   value={formData.niche}
                   onChange={(e) => setFormData({ ...formData, niche: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-surface-light border border-surface-border text-white placeholder-gray-500 focus:outline-none focus:border-neon-purple transition-all"
-                  placeholder="e.g., Fashion, Gaming, Art, Fitness"
+                  placeholder={t("form.nichePlaceholder")}
                 />
               </div>
               <motion.button
@@ -454,7 +450,7 @@ export default function CreatorsPage() {
                 type="submit"
                 className="w-full py-4 rounded-xl bg-gradient-to-r from-neon-purple to-neon-pink text-white font-bold text-lg hover:shadow-lg hover:shadow-purple-500/25 transition-shadow mt-2"
               >
-                Submit Application
+                {t("form.submit")}
               </motion.button>
             </form>
           )}

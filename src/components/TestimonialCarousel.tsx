@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { testimonials } from "@/lib/mock-data";
 
 export default function TestimonialCarousel() {
   const [current, setCurrent] = useState(0);
+  const t = useTranslations("Testimonials");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -58,7 +60,7 @@ export default function TestimonialCarousel() {
                 ? "w-6 bg-gradient-to-r from-neon-purple to-neon-pink"
                 : "bg-gray-600 hover:bg-gray-500"
             }`}
-            aria-label={`Go to testimonial ${i + 1}`}
+            aria-label={t("goTo", { number: i + 1 })}
           />
         ))}
       </div>

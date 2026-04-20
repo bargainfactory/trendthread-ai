@@ -2,21 +2,39 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/mock-data";
 
-const categories = ["All", "Apparel", "Mugs", "Posters", "Phone Cases"];
-const styles = ["All Styles", "Y2K", "Anime", "Retro", "Minimalist", "Abstract"];
+const categoryKeys = ["all", "apparel", "mugs", "posters", "phoneCases"] as const;
+const styleKeys = ["allStyles", "y2k", "anime", "retro", "minimalist", "abstract"] as const;
+const priceRangeKeys = ["all", "under25", "range25to40", "over40"] as const;
 const priceRanges = [
-  { label: "All Prices", min: 0, max: Infinity },
-  { label: "Under $25", min: 0, max: 25 },
-  { label: "$25 - $40", min: 25, max: 40 },
-  { label: "$40+", min: 40, max: Infinity },
+  { min: 0, max: Infinity },
+  { min: 0, max: 25 },
+  { min: 25, max: 40 },
+  { min: 40, max: Infinity },
 ];
 
+const catMap: Record<string, string> = {
+  apparel: "apparel",
+  mugs: "mugs",
+  posters: "posters",
+  phoneCases: "phone-cases",
+};
+
+const styleMap: Record<string, string> = {
+  y2k: "Y2K",
+  anime: "Anime",
+  retro: "Retro",
+  minimalist: "Minimalist",
+  abstract: "Abstract",
+};
+
 export default function ShopPage() {
-  const [category, setCategory] = useState("All");
-  const [style, setStyle] = useState("All Styles");
+  const t = useTranslations("Shop");
+  const [category, setCategory] = useState("all");
+  const [style, setStyle] = useState("allStyles");
   const [priceRange, setPriceRange] = useState(0);
   const [sortBy, setSortBy] = useState<"trending" | "price-low" | "price-high" | "popular">("trending");
   const [showFilters, setShowFilters] = useState(false);
@@ -24,18 +42,12 @@ export default function ShopPage() {
   const filtered = useMemo(() => {
     let result = [...products];
 
-    if (category !== "All") {
-      const catMap: Record<string, string> = {
-        Apparel: "apparel",
-        Mugs: "mugs",
-        Posters: "posters",
-        "Phone Cases": "phone-cases",
-      };
+    if (category !== "all") {
       result = result.filter((p) => p.category === catMap[category]);
     }
 
-    if (style !== "All Styles") {
-      result = result.filter((p) => p.style === style);
+    if (style !== "allStyles") {
+      result = result.filter((p) => p.style === styleMap[style]);
     }
 
     const range = priceRanges[priceRange];
@@ -70,11 +82,10 @@ export default function ShopPage() {
         <div className="max-w-7xl mx-auto relative text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              <span className="text-gradient">The Shop</span> 🛍️
+              <span className="text-gradient">{t("heading")}</span> 🛍️
             </h1>
             <p className="text-gray-400 max-w-xl mx-auto text-lg">
-              Browse {products.length}+ AI-generated designs on premium products.
-              New drops every day.
+              {t("subtext", { count: products.length })}
             </p>
           </motion.div>
         </div>
@@ -90,16 +101,16 @@ export default function ShopPage() {
                 onClick={() => setShowFilters(!showFilters)}
                 className="lg:hidden w-full flex items-center justify-between p-4 rounded-xl bg-surface border border-surface-border text-white mb-4"
               >
-                <span className="font-semibold">Filters</span>
+                <span className="font-semibold">{t("filters")}</span>
                 <span>{showFilters ? "−" : "+"}</span>
               </button>
 
               <div className={`space-y-6 ${showFilters ? "block" : "hidden lg:block"}`}>
                 {/* Category filter */}
                 <div className="rounded-xl bg-surface border border-surface-border p-4">
-                  <h3 className="font-semibold text-white mb-3 text-sm">Category</h3>
+                  <h3 className="font-semibold text-white mb-3 text-sm">{t("category")}</h3>
                   <div className="space-y-1">
-                    {categories.map((cat) => (
+                    {categoryKeys.map((cat) => (
                       <button
                         key={cat}
                         onClick={() => setCategory(cat)}
@@ -109,7 +120,7 @@ export default function ShopPage() {
                             : "text-gray-400 hover:text-white hover:bg-surface-light"
                         }`}
                       >
-                        {cat}
+                        {t(`categories.${cat}`)}
                       </button>
                     ))}
                   </div>
@@ -117,9 +128,9 @@ export default function ShopPage() {
 
                 {/* Style filter */}
                 <div className="rounded-xl bg-surface border border-surface-border p-4">
-                  <h3 className="font-semibold text-white mb-3 text-sm">Style</h3>
+                  <h3 className="font-semibold text-white mb-3 text-sm">{t("style")}</h3>
                   <div className="space-y-1">
-                    {styles.map((s) => (
+                    {styleKeys.map((s) => (
                       <button
                         key={s}
                         onClick={() => setStyle(s)}
@@ -129,7 +140,7 @@ export default function ShopPage() {
                             : "text-gray-400 hover:text-white hover:bg-surface-light"
                         }`}
                       >
-                        {s}
+                        {t(`styles.${s}`)}
                       </button>
                     ))}
                   </div>
@@ -137,11 +148,11 @@ export default function ShopPage() {
 
                 {/* Price filter */}
                 <div className="rounded-xl bg-surface border border-surface-border p-4">
-                  <h3 className="font-semibold text-white mb-3 text-sm">Price Range</h3>
+                  <h3 className="font-semibold text-white mb-3 text-sm">{t("priceRange")}</h3>
                   <div className="space-y-1">
-                    {priceRanges.map((range, i) => (
+                    {priceRangeKeys.map((key, i) => (
                       <button
-                        key={range.label}
+                        key={key}
                         onClick={() => setPriceRange(i)}
                         className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all ${
                           priceRange === i
@@ -149,7 +160,7 @@ export default function ShopPage() {
                             : "text-gray-400 hover:text-white hover:bg-surface-light"
                         }`}
                       >
-                        {range.label}
+                        {t(`priceRanges.${key}`)}
                       </button>
                     ))}
                   </div>
@@ -157,7 +168,7 @@ export default function ShopPage() {
 
                 {/* Style tags */}
                 <div className="rounded-xl bg-surface border border-surface-border p-4">
-                  <h3 className="font-semibold text-white mb-3 text-sm">Popular Tags</h3>
+                  <h3 className="font-semibold text-white mb-3 text-sm">{t("popularTags")}</h3>
                   <div className="flex flex-wrap gap-2">
                     {["trending", "neon", "anime", "retro", "y2k", "cyber", "kawaii", "minimal"].map((tag) => (
                       <span
@@ -178,19 +189,19 @@ export default function ShopPage() {
               <div className="flex items-center justify-between mb-6">
                 <p className="text-sm text-gray-400">
                   <span className="text-white font-semibold">{filtered.length}</span>{" "}
-                  products found
+                  {t("productsFound", { count: filtered.length }).replace(String(filtered.length), "").trim()}
                 </p>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs text-gray-500 hidden sm:inline">Sort:</span>
+                  <span className="text-xs text-gray-500 hidden sm:inline">{t("sort")}</span>
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
                     className="px-3 py-2 rounded-lg bg-surface border border-surface-border text-sm text-white focus:outline-none focus:border-neon-purple"
                   >
-                    <option value="trending">Trending</option>
-                    <option value="popular">Most Popular</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
+                    <option value="trending">{t("sortOptions.trending")}</option>
+                    <option value="popular">{t("sortOptions.popular")}</option>
+                    <option value="price-low">{t("sortOptions.priceLow")}</option>
+                    <option value="price-high">{t("sortOptions.priceHigh")}</option>
                   </select>
                 </div>
               </div>
@@ -198,8 +209,8 @@ export default function ShopPage() {
               {filtered.length === 0 ? (
                 <div className="text-center py-20">
                   <span className="text-5xl block mb-4">🔍</span>
-                  <p className="text-gray-400 text-lg mb-2">No products found</p>
-                  <p className="text-gray-500 text-sm">Try adjusting your filters</p>
+                  <p className="text-gray-400 text-lg mb-2">{t("noProducts")}</p>
+                  <p className="text-gray-500 text-sm">{t("noProductsHint")}</p>
                 </div>
               ) : (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
@@ -209,7 +220,7 @@ export default function ShopPage() {
                 </div>
               )}
 
-              {/* Load more area - infinite scroll feel */}
+              {/* Load more area */}
               {filtered.length > 0 && (
                 <div className="text-center mt-12">
                   <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-gray-400 text-sm">
@@ -217,7 +228,7 @@ export default function ShopPage() {
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                     </svg>
-                    Scroll for more designs...
+                    {t("scrollMore")}
                   </div>
                 </div>
               )}

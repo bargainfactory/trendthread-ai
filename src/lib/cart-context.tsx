@@ -46,7 +46,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         }
         return [...prev, { product, quantity: 1 }];
       });
-      showToast(`${product.title} added to cart!`);
+      showToast(`${product.title} ✓`);
       setIsOpen(true);
     },
     [showToast]

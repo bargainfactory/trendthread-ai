@@ -1,0 +1,457 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "collections": "Collections",
+    "shop": "Boutique",
+    "designStudio": "Studio de Design",
+    "howItWorks": "Comment ca Marche",
+    "creators": "Createurs",
+    "pricing": "Tarifs",
+    "startCreating": "Commencer a Creer",
+    "openCart": "Ouvrir le panier",
+    "toggleMenu": "Ouvrir le menu"
+  },
+  "Hero": {
+    "badge": "2,4M+ designs generes et ca continue",
+    "headlineDesign": "Creez.",
+    "headlinePrint": "Imprimez.",
+    "headlineProfit": "Profitez.",
+    "subtext": "Transformez n'importe quelle idee en un design viral en quelques secondes avec l'IA. Aucune competence en design requise. Impression a la demande. Livraison mondiale. Lancez votre marque aujourd'hui."
+  },
+  "AIGenerator": {
+    "placeholder": "Decrivez le design de vos reves...",
+    "random": "Aleatoire",
+    "generate": "Generer",
+    "generating": "Generation...",
+    "tryLabel": "Essayez :",
+    "resultsHeading": "Designs Generes par IA",
+    "promptLabel": "Description :",
+    "buyPrice": "Acheter 29,99 $",
+    "addToStore": "Ajouter a la Boutique",
+    "regenerate": "Generer Plus de Variations",
+    "creatingDesign": "Creation du design {number}...",
+    "errorMessage": "Echec de la generation. Veuillez reessayer.",
+    "samplePrompts": {
+      "p1": "Chat cyberpunk dans une ville neon",
+      "p2": "Coucher de soleil retro avec palmiers",
+      "p3": "Visages geometriques abstraits",
+      "p4": "Astronaute kawaii spatial",
+      "p5": "Ailes de papillon art glitch",
+      "p6": "Motif coeurs chromes Y2K",
+      "p7": "Dragon crachant du feu dans l'espace",
+      "p8": "Statue grecque vaporwave avec lunettes de soleil"
+    }
+  },
+  "Stats": {
+    "designsGenerated": "Designs Generes",
+    "activeCreators": "Createurs Actifs",
+    "ordersShipped": "Commandes Expediees",
+    "creatorPayouts": "Paiements Createurs"
+  },
+  "Trending": {
+    "heading": "Tendances du Moment",
+    "subtext": "Les designs IA les plus populaires qui s'arrachent. Mis a jour en temps reel.",
+    "viewAll": "Voir Tous les Produits",
+    "tags": {
+      "all": "Tous",
+      "apparel": "Vetements",
+      "mugs": "Mugs",
+      "posters": "Posters",
+      "phoneCases": "Coques",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro"
+    }
+  },
+  "HowItWorksPreview": {
+    "heading": "De l'Idee a Votre Porte en",
+    "headingHighlight": "4 Etapes",
+    "subtext": "Le moyen le plus rapide de creer et vendre du merch personnalise. Sans stock, sans tracas.",
+    "learnMore": "En savoir plus sur notre processus",
+    "steps": {
+      "s1": { "title": "Tapez Votre Idee", "desc": "Decrivez n'importe quel concept de design en langage naturel" },
+      "s2": { "title": "L'IA Genere", "desc": "Obtenez 4 designs uniques en moins de 10 secondes" },
+      "s3": { "title": "On Imprime", "desc": "Impression DTG premium sur des produits de qualite" },
+      "s4": { "title": "Livraison Rapide", "desc": "Livre a votre porte ou a vos clients" }
+    }
+  },
+  "Testimonials": {
+    "heading": "Les Createurs",
+    "headingHighlight": "Nous Adorent",
+    "subtext": "Rejoignez plus de 45 000 createurs qui gagnent deja de l'argent avec TrendThread AI.",
+    "goTo": "Aller au temoignage {number}"
+  },
+  "CTA": {
+    "heading": "Pret a Creer Votre",
+    "headingHighlight": "Premier Design ?",
+    "subtext": "Rejoignez des milliers de createurs qui gagnent de l'argent avec des designs generes par IA. Commencez gratuitement. Sans carte bancaire.",
+    "startCreating": "Commencer Gratuitement",
+    "viewPricing": "Voir les Tarifs"
+  },
+  "Footer": {
+    "newsletter": {
+      "heading": "Restez en Avance sur les Tendances",
+      "subtext": "Recevez chaque semaine des designs tendance, des conseils pour createurs et des offres exclusives.",
+      "placeholder": "votre@email.com",
+      "subscribe": "S'abonner",
+      "subscribed": "Abonne !"
+    },
+    "product": "Produit",
+    "company": "Entreprise",
+    "support": "Support",
+    "legal": "Legal",
+    "links": {
+      "designStudio": "Studio de Design",
+      "shop": "Boutique",
+      "collections": "Collections",
+      "pricing": "Tarifs",
+      "howItWorks": "Comment ca Marche",
+      "creatorProgram": "Programme Createurs",
+      "aboutUs": "A Propos",
+      "blog": "Blog",
+      "helpCenter": "Centre d'Aide",
+      "contact": "Contact",
+      "shippingInfo": "Info Livraison",
+      "returns": "Retours",
+      "privacyPolicy": "Politique de Confidentialite",
+      "termsOfService": "Conditions d'Utilisation",
+      "cookiePolicy": "Politique de Cookies",
+      "dmca": "DMCA"
+    },
+    "copyright": "2026. Tous droits reserves."
+  },
+  "Cart": {
+    "yourCart": "Votre Panier",
+    "closeCart": "Fermer le panier",
+    "emptyTitle": "Votre panier est vide",
+    "emptySubtext": "Commencez a ajouter des designs incroyables !",
+    "by": "par",
+    "subtotal": "Sous-total",
+    "shippingNote": "Frais de livraison calcules a la caisse",
+    "checkout": "Passer la Commande",
+    "clearCart": "Vider le Panier",
+    "removeItem": "Supprimer l'article"
+  },
+  "ProductCard": {
+    "addToCart": "Ajouter au Panier",
+    "trending": "Tendance",
+    "sold": "{count} vendus",
+    "by": "par"
+  },
+  "Shop": {
+    "heading": "La Boutique",
+    "subtext": "Parcourez {count}+ designs generes par IA sur des produits premium. Nouveautes chaque jour.",
+    "filters": "Filtres",
+    "category": "Categorie",
+    "style": "Style",
+    "priceRange": "Gamme de Prix",
+    "popularTags": "Tags Populaires",
+    "productsFound": "{count} produits trouves",
+    "sort": "Trier :",
+    "sortOptions": {
+      "trending": "Tendance",
+      "popular": "Plus Populaire",
+      "priceLow": "Prix : Croissant",
+      "priceHigh": "Prix : Decroissant"
+    },
+    "noProducts": "Aucun produit trouve",
+    "noProductsHint": "Essayez d'ajuster vos filtres",
+    "scrollMore": "Defilez pour plus de designs...",
+    "categories": {
+      "all": "Tous",
+      "apparel": "Vetements",
+      "mugs": "Mugs",
+      "posters": "Posters",
+      "phoneCases": "Coques"
+    },
+    "styles": {
+      "allStyles": "Tous les Styles",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro",
+      "minimalist": "Minimaliste",
+      "abstract": "Abstrait"
+    },
+    "priceRanges": {
+      "all": "Tous les Prix",
+      "under25": "Moins de 25 $",
+      "range25to40": "25 $ - 40 $",
+      "over40": "Plus de 40 $"
+    }
+  },
+  "Collections": {
+    "badge": "Collections curees par IA mises a jour toutes les heures",
+    "heading": "Collections Tendance",
+    "subtext": "Explorez des collections curees des designs IA les plus populaires, selectionnes par notre algorithme de tendances.",
+    "exploreCollection": "Explorer la Collection",
+    "designs": "{count} designs",
+    "sold": "{count} vendus",
+    "by": "par",
+    "sortBy": "Trier par :",
+    "sortOptions": {
+      "trending": "Tendance",
+      "sales": "Ventes",
+      "newest": "Nouveautes"
+    },
+    "categories": {
+      "all": "Tous",
+      "apparel": "Vetements",
+      "mugs": "Mugs",
+      "posters": "Posters",
+      "phoneCases": "Coques"
+    }
+  },
+  "Studio": {
+    "heading": "Studio de Design",
+    "subtext": "Creez des designs personnalises avec l'IA. Choisissez votre style, produit et couleurs, puis laissez notre IA faire la magie.",
+    "designPrompt": "Description du Design",
+    "promptPlaceholder": "Decrivez votre idee de design... ex., 'Un chat cyberpunk neon faisant du skateboard dans une ville retro au coucher du soleil'",
+    "quickIdeas": "Idees rapides :",
+    "ideas": {
+      "i1": "Coucher de soleil vaporwave",
+      "i2": "Chat spatial kawaii",
+      "i3": "Portrait art glitch",
+      "i4": "Dragon dans une ville neon"
+    },
+    "style": "Style",
+    "productType": "Type de Produit",
+    "colorPalette": "Palette de Couleurs",
+    "generateDesign": "Generer le Design",
+    "aiGenerating": "L'IA Genere Vos Designs...",
+    "livePreview": "Apercu en Direct",
+    "aiGenerated": "Genere par IA",
+    "creatingMasterpiece": "L'IA cree votre chef-d'oeuvre...",
+    "creatingWait": "Cela peut prendre 10-20 secondes",
+    "previewPlaceholder": "Votre design genere par IA apparaitra ici",
+    "previewHint": "Entrez une description et cliquez sur Generer",
+    "palette": "Palette {name}",
+    "aiDesignVariants": "Variantes de Design IA",
+    "clickToPreview": "Cliquez pour previsualiser",
+    "orderNow": "Commander - {price} $",
+    "save": "Sauvegarder",
+    "saved": "Sauvegarde !",
+    "regenerate": "Regenerer avec les Memes Parametres",
+    "errorMessage": "Echec de la generation. Veuillez reessayer."
+  },
+  "HowItWorks": {
+    "badge": "De l'idee au produit en minutes, pas en semaines",
+    "heading": "Comment",
+    "headingBrand": "TrendThread AI",
+    "headingEnd": "Fonctionne",
+    "subtext": "Nous avons remplace le processus traditionnel de design a impression par l'IA. Le resultat ? 100x plus rapide, 10x moins cher, infiniment plus creatif.",
+    "step": "Etape",
+    "steps": {
+      "s1": {
+        "title": "Decrivez Votre Vision",
+        "description": "Tapez n'importe quelle idee de design en francais. Notre IA comprend les descriptions complexes, les styles, les ambiances et les esthetiques. Soyez aussi specifique ou abstrait que vous le souhaitez.",
+        "details": ["Descriptions en langage naturel", "Mots-cles de style et d'ambiance", "Reference a des styles artistiques existants", "Support multilingue"]
+      },
+      "s2": {
+        "title": "L'IA Genere les Designs",
+        "description": "Notre modele d'IA proprietaire genere 4 variantes de design uniques en moins de 10 secondes. Chaque design est original, haute resolution et pret a imprimer. Choisissez votre prefere ou generez-en plus.",
+        "details": ["4 variantes uniques par generation", "Sortie vectorielle haute resolution", "Resultats fideles au style", "Regenerations illimitees (Pro)"]
+      },
+      "s3": {
+        "title": "Production d'Impression Premium",
+        "description": "Nous utilisons l'impression DTG et la sublimation de pointe. Chaque produit est fabrique avec des materiaux premium et passe un controle qualite avant expedition.",
+        "details": ["Impression DTG et sublimation", "Tissus et materiaux premium", "Inspection controle qualite", "Encres ecologiques"]
+      },
+      "s4": {
+        "title": "Livraison Mondiale Rapide",
+        "description": "Votre produit personnalise est expedie sous 2-5 jours ouvrables. Suivez votre commande en temps reel. Nous livrons dans plus de 180 pays avec des options express et standard.",
+        "details": ["Production en 2-5 jours", "Plus de 180 pays", "Suivi en temps reel", "Livraison express disponible"]
+      }
+    },
+    "comparisonHeading": "POD Traditionnel vs",
+    "comparisonBrand": "TrendThread AI",
+    "comparisonSubtext": "Decouvrez pourquoi les createurs passent a l'impression a la demande propulsee par l'IA.",
+    "comparisonFeature": "Fonctionnalite",
+    "comparisonTraditional": "POD Traditionnel",
+    "comparison": {
+      "r1": { "feature": "Temps de creation du design", "traditional": "2-5 jours", "trendthread": "10 secondes" },
+      "r2": { "feature": "Cout du design", "traditional": "50-500 $+", "trendthread": "Gratuit - 0,50 $" },
+      "r3": { "feature": "Competences requises", "traditional": "Professionnel", "trendthread": "Aucune" },
+      "r4": { "feature": "Maquettes produit", "traditional": "Creation manuelle", "trendthread": "Maquette IA instantanee" },
+      "r5": { "feature": "Stock necessaire", "traditional": "Oui, d'avance", "trendthread": "Zero stock" },
+      "r6": { "feature": "Commande minimum", "traditional": "25-100 unites", "trendthread": "1 unite" },
+      "r7": { "feature": "Delai de mise sur le marche", "traditional": "2-4 semaines", "trendthread": "Minutes" }
+    },
+    "ctaHeading": "Pret a",
+    "ctaHighlight": "Commencer ?",
+    "ctaSubtext": "Creez votre premier design IA en 10 secondes. Gratuit, sans carte bancaire.",
+    "ctaButton": "Ouvrir le Studio de Design"
+  },
+  "Creators": {
+    "badge": "3,2M $+ verses aux createurs",
+    "heading": "Programme Createurs",
+    "subtext": "Transformez votre creativite en revenus. Designez avec l'IA, vendez au monde entier et gagnez jusqu'a 20% de commission sur chaque vente.",
+    "stats": {
+      "activeCreators": "Createurs Actifs",
+      "totalPayouts": "Paiements Totaux",
+      "avgMonthly": "Revenus Mensuels Moy.",
+      "topCreator": "Revenus Top Createur"
+    },
+    "commissionTiers": "Niveaux de Commission",
+    "commissionSubtext": "Gagnez plus en vendant plus. Simple.",
+    "tiers": {
+      "gold": { "name": "Or", "requirement": "0-50 ventes/mois" },
+      "platinum": { "name": "Platine", "requirement": "51-200 ventes/mois" },
+      "diamond": { "name": "Diamant", "requirement": "200+ ventes/mois" }
+    },
+    "tierFeatures": {
+      "aiTools": "Acces aux outils de design IA",
+      "analytics": "Tableau de bord analytique",
+      "weeklyPayouts": "Paiements hebdomadaires",
+      "prioritySupport": "Support prioritaire",
+      "featuredPlacement": "Placement en vedette",
+      "customStorefront": "Vitrine personnalisee"
+    },
+    "howToJoin": "Comment Rejoindre",
+    "joinSteps": {
+      "s1": { "title": "Postulez", "desc": "Remplissez un formulaire rapide. L'approbation prend moins de 24 heures." },
+      "s2": { "title": "Creez", "desc": "Utilisez nos outils IA pour generer des designs incroyables et construire des collections." },
+      "s3": { "title": "Partagez", "desc": "Partagez vos designs sur les reseaux sociaux, votre boutique ou notre marketplace." },
+      "s4": { "title": "Gagnez", "desc": "Gagnez des commissions sur chaque vente. Paiements hebdomadaires via PayPal ou Stripe." }
+    },
+    "calculator": {
+      "heading": "Calculateur de Revenus",
+      "subtext": "Decouvrez combien vous pourriez gagner en tant que createur TrendThread AI.",
+      "monthlyViews": "Visites Mensuelles de la Boutique",
+      "commissionTier": "Niveau de Commission",
+      "estSales": "Ventes Est.",
+      "monthlyEarnings": "Revenus Mensuels",
+      "annualEarnings": "Revenus Annuels",
+      "perMonth": "/mois"
+    },
+    "stories": "Histoires de Createurs",
+    "topCreators": "Top Createurs",
+    "designs": "designs",
+    "followers": "abonnes",
+    "earned": "Gagne :",
+    "applyNow": "Postulez Maintenant",
+    "applySubtext": "Rejoignez notre communaute de createurs et commencez a gagner aujourd'hui.",
+    "form": {
+      "fullName": "Nom Complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "vous@email.com",
+      "socialMedia": "Profil Reseaux Sociaux",
+      "socialPlaceholder": "https://instagram.com/votrepseudo",
+      "followerCount": "Nombre d'Abonnes",
+      "selectRange": "Choisir une fourchette",
+      "range0to1k": "0 - 1 000",
+      "range1kto10k": "1 000 - 10 000",
+      "range10kto50k": "10 000 - 50 000",
+      "range50kto100k": "50 000 - 100 000",
+      "range100kPlus": "100 000+",
+      "niche": "Votre Niche",
+      "nichePlaceholder": "ex., Mode, Gaming, Art, Fitness",
+      "submit": "Soumettre la Candidature"
+    },
+    "submitted": {
+      "title": "Candidature Soumise !",
+      "text": "Nous examinerons votre candidature et vous repondrons dans les 24 heures. Verifiez votre email pour la confirmation."
+    }
+  },
+  "Pricing": {
+    "heading": "Tarifs",
+    "headingHighlight": "Transparents",
+    "headingEnd": "et Simples",
+    "subtext": "Commencez gratuitement, passez a la vitesse superieure quand vous etes pret. Sans frais caches, sans surprises.",
+    "monthly": "Mensuel",
+    "annual": "Annuel",
+    "annualDiscount": "-20%",
+    "billedAnnually": "/mois (facture annuellement)",
+    "mostPopular": "Plus Populaire",
+    "plans": {
+      "free": {
+        "name": "Gratuit",
+        "price": "0 $",
+        "period": "pour toujours",
+        "description": "Parfait pour essayer la generation de designs par IA.",
+        "features": [
+          "10 designs IA par jour",
+          "Export qualite standard",
+          "5 types de produits",
+          "Options de style basiques",
+          "Support communautaire",
+          "Tarifs de livraison standard"
+        ],
+        "cta": "Commencer Gratuitement"
+      },
+      "pro": {
+        "name": "Pro Createur",
+        "price": "29 $",
+        "period": "/mois",
+        "description": "Pour les createurs prets a lancer un vrai business de merch.",
+        "features": [
+          "Designs IA illimites",
+          "Export HD (4K)",
+          "Tous les types de produits",
+          "Toutes les options de style + personnalisees",
+          "Support prioritaire",
+          "Tableau de bord analytique",
+          "Listing marketplace createurs",
+          "Boost de commission de 10%",
+          "Suppression du filigrane",
+          "Generation en masse (20 a la fois)"
+        ],
+        "cta": "Passer Pro"
+      },
+      "business": {
+        "name": "Business",
+        "price": "99 $",
+        "period": "/mois",
+        "description": "Pour les marques et agences qui developpent le print-on-demand.",
+        "features": [
+          "Tout dans Pro Createur",
+          "Marque blanche",
+          "Acces API",
+          "Inserts d'emballage personnalises",
+          "Gestionnaire de compte dedie",
+          "Remises volume (jusqu'a 40%)",
+          "Comptes d'equipe (5 sieges)",
+          "Analytiques avancees",
+          "File de production prioritaire",
+          "Types de produits personnalises"
+        ],
+        "cta": "Commencer Business"
+      }
+    },
+    "bulkPricing": "Tarifs Volume",
+    "bulkCalculator": "Calculateur",
+    "bulkSubtext": "Obtenez de meilleurs tarifs avec des volumes plus importants. Jusqu'a 40% de reduction.",
+    "orderQuantity": "Quantite de Commande",
+    "units": "unites",
+    "off": "de reduction",
+    "unitsPlus": "{count}+ unites",
+    "perUnit": "Par Unite",
+    "discount": "Remise",
+    "total": "Total",
+    "enterprise": {
+      "heading": "Entreprise",
+      "subtext": "Besoin de solutions personnalisees pour votre marque ou agence ? 1 000+ unites/mois ? Laissez-nous creer un plan sur mesure pour vous.",
+      "emailPlaceholder": "vous@entreprise.com",
+      "contactSales": "Contacter les Ventes",
+      "contactSent": "Nous vous contacterons dans les 24 heures !"
+    },
+    "faqHeading": "Questions",
+    "faqHighlight": "Frequemment Posees",
+    "faqs": {
+      "q1": { "q": "Comment fonctionne le generateur de designs IA ?", "a": "Tapez simplement une description de votre idee de design, choisissez un style et un type de produit, et notre IA genere quatre designs uniques en quelques secondes. Vous pouvez ensuite personnaliser, commander ou les ajouter a votre boutique." },
+      "q2": { "q": "Quelle est la qualite d'impression ?", "a": "Nous utilisons l'impression DTG premium et la sublimation haute qualite pour tous les produits. Les couleurs sont vibrantes, durables et resistantes au lavage. Chaque commande passe un controle qualite avant expedition." },
+      "q3": { "q": "Combien de temps prend la livraison ?", "a": "La livraison standard prend 5-8 jours ouvrables aux Etats-Unis. La livraison express (2-3 jours) est disponible. Les commandes internationales arrivent generalement sous 10-15 jours ouvrables." },
+      "q4": { "q": "Puis-je vendre les designs que je cree sur TrendThread AI ?", "a": "Absolument ! Rejoignez notre Programme Createurs et gagnez 10-20% de commission sur chaque vente. Vous possedez les droits commerciaux de tout design que vous generez sur notre plateforme." },
+      "q5": { "q": "Y a-t-il une limite au nombre de designs que je peux creer ?", "a": "Les comptes gratuits peuvent generer jusqu'a 10 designs par jour. Les comptes Pro Createur obtiennent des generations illimitees, et les comptes Business incluent des outils de generation en masse." },
+      "q6": { "q": "Integrez-vous avec Shopify ?", "a": "Oui ! Notre integration Shopify vous permet de pousser des designs directement vers votre boutique Shopify en un clic. Nous gerons l'impression, l'emballage et l'expedition automatiquement." },
+      "q7": { "q": "Et si je ne suis pas satisfait de ma commande ?", "a": "Nous offrons une garantie de satisfaction a 100%. S'il y a un probleme de qualite d'impression ou de defaut produit, nous reimprimons ou remboursons votre commande sous 30 jours." },
+      "q8": { "q": "Puis-je utiliser TrendThread AI pour ma marque existante ?", "a": "Oui ! Les comptes Business incluent des options en marque blanche avec branding personnalise, inserts d'emballage et votre logo sur les bordereaux d'expedition." }
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Langue"
+  },
+  "Common": {
+    "addedToCart": "{title} ajoute au panier !"
+  }
+}

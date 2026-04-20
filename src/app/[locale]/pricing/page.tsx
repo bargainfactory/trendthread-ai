@@ -2,68 +2,14 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import PricingCard from "@/components/PricingCard";
 import FAQAccordion from "@/components/FAQAccordion";
-import { faqs } from "@/lib/mock-data";
 
-const plans = [
-  {
-    name: "Free",
-    price: "$0",
-    period: "forever",
-    description: "Perfect for trying out AI design generation.",
-    features: [
-      "10 AI designs per day",
-      "Standard quality export",
-      "5 product types",
-      "Basic style options",
-      "Community support",
-      "Standard shipping rates",
-    ],
-    cta: "Start Free",
-  },
-  {
-    name: "Pro Creator",
-    price: "$29",
-    period: "/month",
-    description: "For creators ready to build a real merch business.",
-    features: [
-      "Unlimited AI designs",
-      "HD quality export (4K)",
-      "All product types",
-      "All style options + custom",
-      "Priority support",
-      "Analytics dashboard",
-      "Creator marketplace listing",
-      "10% commission boost",
-      "Custom watermark removal",
-      "Bulk generation (20 at once)",
-    ],
-    cta: "Go Pro",
-    popular: true,
-  },
-  {
-    name: "Business",
-    price: "$99",
-    period: "/month",
-    description: "For brands and agencies scaling print-on-demand.",
-    features: [
-      "Everything in Pro Creator",
-      "White-label branding",
-      "API access",
-      "Custom packaging inserts",
-      "Dedicated account manager",
-      "Bulk discounts (up to 40%)",
-      "Team accounts (5 seats)",
-      "Advanced analytics",
-      "Priority production queue",
-      "Custom product types",
-    ],
-    cta: "Start Business",
-  },
-];
+const planKeys = ["free", "pro", "business"] as const;
 
 export default function PricingPage() {
+  const t = useTranslations("Pricing");
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
   const [bulkQty, setBulkQty] = useState(50);
   const [contactSent, setContactSent] = useState(false);
@@ -73,6 +19,13 @@ export default function PricingPage() {
   const basePerUnit = 15;
   const discountedPerUnit = basePerUnit * (1 - bulkDiscount / 100);
   const totalBulk = discountedPerUnit * bulkQty;
+
+  // Build FAQ items from translations
+  const faqKeys = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"] as const;
+  const faqs = faqKeys.map((key) => ({
+    q: t(`faqs.${key}.q`),
+    a: t(`faqs.${key}.a`),
+  }));
 
   return (
     <div className="min-h-screen">
@@ -85,10 +38,10 @@ export default function PricingPage() {
         <div className="max-w-5xl mx-auto relative text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              Simple, <span className="text-gradient">Transparent</span> Pricing
+              {t("heading")} <span className="text-gradient">{t("headingHighlight")}</span> {t("headingEnd")}
             </h1>
             <p className="text-gray-400 max-w-xl mx-auto text-lg mb-8">
-              Start free, upgrade when you are ready. No hidden fees, no surprises.
+              {t("subtext")}
             </p>
 
             {/* Billing toggle */}
@@ -101,7 +54,7 @@ export default function PricingPage() {
                     : "text-gray-400 hover:text-white"
                 }`}
               >
-                Monthly
+                {t("monthly")}
               </button>
               <button
                 onClick={() => setBillingCycle("annual")}
@@ -111,9 +64,9 @@ export default function PricingPage() {
                     : "text-gray-400 hover:text-white"
                 }`}
               >
-                Annual
+                {t("annual")}
                 <span className="absolute -top-3 -right-3 px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 text-[10px] font-bold">
-                  -20%
+                  {t("annualDiscount")}
                 </span>
               </button>
             </div>
@@ -125,25 +78,30 @@ export default function PricingPage() {
       <section className="px-4 pb-20">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {plans.map((plan, i) => {
-              let displayPrice = plan.price;
-              let displayPeriod = plan.period;
-              if (billingCycle === "annual" && plan.price !== "$0") {
-                const monthly = parseInt(plan.price.replace("$", ""));
+            {planKeys.map((key, i) => {
+              const planPrice = t(`plans.${key}.price`);
+              const planPeriod = t(`plans.${key}.period`);
+              const features: string[] = t.raw(`plans.${key}.features`) as string[];
+
+              let displayPrice = planPrice;
+              let displayPeriod = planPeriod;
+              if (billingCycle === "annual" && planPrice !== "$0") {
+                const monthly = parseInt(planPrice.replace("$", ""));
                 const annual = Math.round(monthly * 12 * 0.8);
                 displayPrice = `$${Math.round(annual / 12)}`;
-                displayPeriod = "/mo (billed annually)";
+                displayPeriod = t("billedAnnually");
               }
               return (
                 <PricingCard
-                  key={plan.name}
-                  name={plan.name}
+                  key={key}
+                  name={t(`plans.${key}.name`)}
                   price={displayPrice}
                   period={displayPeriod}
-                  description={plan.description}
-                  features={plan.features}
-                  cta={plan.cta}
-                  popular={plan.popular}
+                  description={t(`plans.${key}.description`)}
+                  features={features}
+                  cta={t(`plans.${key}.cta`)}
+                  popular={key === "pro"}
+                  popularLabel={t("mostPopular")}
                   index={i}
                 />
               );
@@ -163,19 +121,19 @@ export default function PricingPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              <span className="text-gradient">Bulk Pricing</span> Calculator
+              <span className="text-gradient">{t("bulkPricing")}</span> {t("bulkCalculator")}
             </h2>
             <p className="text-gray-400">
-              Get better rates with higher order volumes. Up to 40% off.
+              {t("bulkSubtext")}
             </p>
           </motion.div>
 
           <div className="rounded-2xl bg-surface border border-surface-border p-6 md:p-8">
             <div className="mb-6">
               <div className="flex justify-between mb-2">
-                <label className="text-sm text-gray-300">Order Quantity</label>
+                <label className="text-sm text-gray-300">{t("orderQuantity")}</label>
                 <span className="text-sm font-semibold text-neon-purple">
-                  {bulkQty} units
+                  {bulkQty} {t("units")}
                 </span>
               </div>
               <input
@@ -215,8 +173,8 @@ export default function PricingPage() {
                       : "bg-surface-light text-gray-500 border border-surface-border"
                   }`}
                 >
-                  <p className="font-bold">{tier.discount}% off</p>
-                  <p>{tier.min}+ units</p>
+                  <p className="font-bold">{tier.discount}% {t("off")}</p>
+                  <p>{t("unitsPlus", { count: tier.min })}</p>
                 </div>
               ))}
             </div>
@@ -224,7 +182,7 @@ export default function PricingPage() {
             {/* Results */}
             <div className="grid grid-cols-3 gap-4 p-4 rounded-xl bg-surface-light">
               <div className="text-center">
-                <p className="text-xs text-gray-500 mb-1">Per Unit</p>
+                <p className="text-xs text-gray-500 mb-1">{t("perUnit")}</p>
                 <p className="text-xl font-bold text-white">
                   ${discountedPerUnit.toFixed(2)}
                 </p>
@@ -235,13 +193,13 @@ export default function PricingPage() {
                 )}
               </div>
               <div className="text-center">
-                <p className="text-xs text-gray-500 mb-1">Discount</p>
+                <p className="text-xs text-gray-500 mb-1">{t("discount")}</p>
                 <p className={`text-xl font-bold ${bulkDiscount > 0 ? "text-green-400" : "text-gray-500"}`}>
                   {bulkDiscount}%
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-xs text-gray-500 mb-1">Total</p>
+                <p className="text-xs text-gray-500 mb-1">{t("total")}</p>
                 <p className="text-xl font-bold text-neon-purple">
                   ${totalBulk.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                 </p>
@@ -261,20 +219,19 @@ export default function PricingPage() {
             className="rounded-2xl bg-gradient-to-br from-neon-purple/10 to-neon-pink/10 border border-neon-purple/30 p-8 text-center"
           >
             <span className="text-4xl block mb-4">🏢</span>
-            <h3 className="text-2xl font-bold text-white mb-2">Enterprise</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">{t("enterprise.heading")}</h3>
             <p className="text-gray-400 mb-6">
-              Need custom solutions for your brand or agency? 1,000+ units/month?
-              Let us build a custom plan for you.
+              {t("enterprise.subtext")}
             </p>
             {contactSent ? (
               <div className="text-green-400 font-semibold">
-                We will be in touch within 24 hours! ✅
+                {t("enterprise.contactSent")} ✅
               </div>
             ) : (
               <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <input
                   type="email"
-                  placeholder="your@company.com"
+                  placeholder={t("enterprise.emailPlaceholder")}
                   className="flex-1 px-4 py-3 rounded-xl bg-surface border border-surface-border text-white placeholder-gray-500 focus:outline-none focus:border-neon-purple transition-all"
                 />
                 <motion.button
@@ -283,7 +240,7 @@ export default function PricingPage() {
                   onClick={() => setContactSent(true)}
                   className="px-6 py-3 rounded-xl bg-gradient-to-r from-neon-purple to-neon-pink text-white font-semibold"
                 >
-                  Contact Sales
+                  {t("enterprise.contactSales")}
                 </motion.button>
               </div>
             )}
@@ -301,7 +258,7 @@ export default function PricingPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-              Frequently Asked <span className="text-gradient">Questions</span>
+              {t("faqHeading")} <span className="text-gradient">{t("faqHighlight")}</span>
             </h2>
           </motion.div>
 

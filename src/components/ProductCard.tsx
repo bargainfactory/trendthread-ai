@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useCart } from "@/lib/cart-context";
 import type { Product } from "@/lib/mock-data";
 
@@ -11,6 +12,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, index = 0 }: ProductCardProps) {
   const { addItem } = useCart();
+  const t = useTranslations("ProductCard");
 
   return (
     <motion.div
@@ -19,7 +21,6 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.05, duration: 0.4 }}
       className="group relative rounded-2xl bg-surface border border-surface-border overflow-hidden card-hover"
-      /* Shopify product data attributes */
       data-product-id={product.id}
       data-shopify-product-handle={product.title.toLowerCase().replace(/\s+/g, "-")}
     >
@@ -34,7 +35,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
         {/* Trending badge */}
         {product.trendingScore >= 90 && (
           <div className="absolute top-3 left-3 px-2 py-1 rounded-full bg-black/50 backdrop-blur-sm text-xs font-semibold text-white flex items-center gap-1">
-            <span className="text-orange-400">🔥</span> Trending
+            <span className="text-orange-400">🔥</span> {t("trending")}
           </div>
         )}
 
@@ -47,7 +48,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
               onClick={() => addItem(product)}
               className="px-4 py-2 rounded-xl bg-gradient-to-r from-neon-purple to-neon-pink text-white text-sm font-semibold shadow-lg"
             >
-              Add to Cart
+              {t("addToCart")}
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -71,9 +72,9 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
           </span>
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-xs text-gray-400">by {product.creator}</span>
+          <span className="text-xs text-gray-400">{t("by")} {product.creator}</span>
           <span className="text-xs text-gray-500">
-            {product.salesCount.toLocaleString()} sold
+            {t("sold", { count: product.salesCount.toLocaleString() })}
           </span>
         </div>
         <div className="mt-2 flex flex-wrap gap-1">

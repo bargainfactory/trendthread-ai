@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 interface Stat {
   label: string;
@@ -10,13 +11,6 @@ interface Stat {
   prefix?: string;
   icon: string;
 }
-
-const stats: Stat[] = [
-  { label: "Designs Generated", value: 2470000, suffix: "+", icon: "🎨" },
-  { label: "Active Creators", value: 45200, suffix: "+", icon: "✨" },
-  { label: "Orders Shipped", value: 890000, suffix: "+", icon: "📦" },
-  { label: "Creator Payouts", value: 3200000, suffix: "+", prefix: "$", icon: "💰" },
-];
 
 function formatNumber(n: number): string {
   if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + "M";
@@ -67,6 +61,15 @@ function AnimatedNumber({ stat }: { stat: Stat }) {
 }
 
 export default function StatsCounter() {
+  const t = useTranslations("Stats");
+
+  const stats: Stat[] = [
+    { label: t("designsGenerated"), value: 2470000, suffix: "+", icon: "🎨" },
+    { label: t("activeCreators"), value: 45200, suffix: "+", icon: "✨" },
+    { label: t("ordersShipped"), value: 890000, suffix: "+", icon: "📦" },
+    { label: t("creatorPayouts"), value: 3200000, suffix: "+", prefix: "$", icon: "💰" },
+  ];
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12">
       {stats.map((stat) => (

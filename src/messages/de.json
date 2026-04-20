@@ -1,0 +1,457 @@
+{
+  "Navbar": {
+    "home": "Startseite",
+    "collections": "Kollektionen",
+    "shop": "Shop",
+    "designStudio": "Design-Studio",
+    "howItWorks": "So Funktioniert's",
+    "creators": "Creator",
+    "pricing": "Preise",
+    "startCreating": "Jetzt Erstellen",
+    "openCart": "Warenkorb offnen",
+    "toggleMenu": "Menu offnen"
+  },
+  "Hero": {
+    "badge": "2,4M+ Designs generiert und es werden mehr",
+    "headlineDesign": "Gestalte.",
+    "headlinePrint": "Drucke.",
+    "headlineProfit": "Verdiene.",
+    "subtext": "Verwandle jede Idee in Sekunden mit KI in ein virales Merch-Design. Keine Design-Kenntnisse notig. Print on Demand. Weltweiter Versand. Starte deine Marke heute."
+  },
+  "AIGenerator": {
+    "placeholder": "Beschreibe dein Traumdesign...",
+    "random": "Zufallig",
+    "generate": "Generieren",
+    "generating": "Generierung...",
+    "tryLabel": "Probiere:",
+    "resultsHeading": "KI-generierte Designs",
+    "promptLabel": "Beschreibung:",
+    "buyPrice": "Kaufen 29,99 $",
+    "addToStore": "Zum Shop Hinzufugen",
+    "regenerate": "Mehr Variationen Generieren",
+    "creatingDesign": "Design {number} wird erstellt...",
+    "errorMessage": "Designgenerierung fehlgeschlagen. Bitte erneut versuchen.",
+    "samplePrompts": {
+      "p1": "Cyberpunk-Katze in einer Neon-Stadt",
+      "p2": "Retro-Sonnenuntergang mit Palmen",
+      "p3": "Abstrakte geometrische Gesichter",
+      "p4": "Kawaii Weltraum-Astronaut",
+      "p5": "Glitch-Art Schmetterlingsflugel",
+      "p6": "Y2K Chrom-Herzen Muster",
+      "p7": "Drache speit Feuer im Weltraum",
+      "p8": "Vaporwave griechische Statue mit Sonnenbrille"
+    }
+  },
+  "Stats": {
+    "designsGenerated": "Generierte Designs",
+    "activeCreators": "Aktive Creator",
+    "ordersShipped": "Versendete Bestellungen",
+    "creatorPayouts": "Creator-Auszahlungen"
+  },
+  "Trending": {
+    "heading": "Gerade im Trend",
+    "subtext": "Die heissesten KI-generierten Designs, die wie warme Semmeln weggehen. In Echtzeit aktualisiert.",
+    "viewAll": "Alle Produkte Anzeigen",
+    "tags": {
+      "all": "Alle",
+      "apparel": "Kleidung",
+      "mugs": "Tassen",
+      "posters": "Poster",
+      "phoneCases": "Hullen",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro"
+    }
+  },
+  "HowItWorksPreview": {
+    "heading": "Von der Idee bis zur Haustuer in",
+    "headingHighlight": "4 Schritten",
+    "subtext": "Der schnellste Weg, individuelles Merch zu erstellen und zu verkaufen. Kein Lager, kein Aufwand.",
+    "learnMore": "Mehr uber unseren Prozess erfahren",
+    "steps": {
+      "s1": { "title": "Idee Eingeben", "desc": "Beschreibe jedes Designkonzept in naturlicher Sprache" },
+      "s2": { "title": "KI Generiert", "desc": "Erhalte 4 einzigartige Designs in unter 10 Sekunden" },
+      "s3": { "title": "Wir Drucken", "desc": "Premium DTG-Druck auf Qualitatsprodukten" },
+      "s4": { "title": "Schneller Versand", "desc": "Geliefert an deine Tur oder an deine Kunden" }
+    }
+  },
+  "Testimonials": {
+    "heading": "Creator",
+    "headingHighlight": "Lieben Uns",
+    "subtext": "Schliesse dich uber 45.000 Creatorn an, die bereits mit TrendThread AI Geld verdienen.",
+    "goTo": "Zum Erfahrungsbericht {number}"
+  },
+  "CTA": {
+    "heading": "Bereit, dein",
+    "headingHighlight": "Erstes Design zu Erstellen?",
+    "subtext": "Schliesse dich tausenden Creatorn an, die mit KI-generierten Designs Geld verdienen. Starte kostenlos. Keine Kreditkarte notig.",
+    "startCreating": "Kostenlos Starten",
+    "viewPricing": "Preise Ansehen"
+  },
+  "Footer": {
+    "newsletter": {
+      "heading": "Bleib den Trends Voraus",
+      "subtext": "Erhalte wochentlich trendige Designs, Creator-Tipps und exklusive Angebote.",
+      "placeholder": "deine@email.de",
+      "subscribe": "Abonnieren",
+      "subscribed": "Abonniert!"
+    },
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "support": "Support",
+    "legal": "Rechtliches",
+    "links": {
+      "designStudio": "Design-Studio",
+      "shop": "Shop",
+      "collections": "Kollektionen",
+      "pricing": "Preise",
+      "howItWorks": "So Funktioniert's",
+      "creatorProgram": "Creator-Programm",
+      "aboutUs": "Uber Uns",
+      "blog": "Blog",
+      "helpCenter": "Hilfezentrum",
+      "contact": "Kontakt",
+      "shippingInfo": "Versandinfo",
+      "returns": "Rucksendungen",
+      "privacyPolicy": "Datenschutz",
+      "termsOfService": "Nutzungsbedingungen",
+      "cookiePolicy": "Cookie-Richtlinie",
+      "dmca": "DMCA"
+    },
+    "copyright": "2026. Alle Rechte vorbehalten."
+  },
+  "Cart": {
+    "yourCart": "Dein Warenkorb",
+    "closeCart": "Warenkorb schliessen",
+    "emptyTitle": "Dein Warenkorb ist leer",
+    "emptySubtext": "Fuge tolle Designs hinzu!",
+    "by": "von",
+    "subtotal": "Zwischensumme",
+    "shippingNote": "Versand wird an der Kasse berechnet",
+    "checkout": "Zur Kasse",
+    "clearCart": "Warenkorb Leeren",
+    "removeItem": "Artikel entfernen"
+  },
+  "ProductCard": {
+    "addToCart": "In den Warenkorb",
+    "trending": "Im Trend",
+    "sold": "{count} verkauft",
+    "by": "von"
+  },
+  "Shop": {
+    "heading": "Der Shop",
+    "subtext": "Durchstobere {count}+ KI-generierte Designs auf Premium-Produkten. Taglich neue Drops.",
+    "filters": "Filter",
+    "category": "Kategorie",
+    "style": "Stil",
+    "priceRange": "Preisbereich",
+    "popularTags": "Beliebte Tags",
+    "productsFound": "{count} Produkte gefunden",
+    "sort": "Sortieren:",
+    "sortOptions": {
+      "trending": "Im Trend",
+      "popular": "Am Beliebtesten",
+      "priceLow": "Preis: Aufsteigend",
+      "priceHigh": "Preis: Absteigend"
+    },
+    "noProducts": "Keine Produkte gefunden",
+    "noProductsHint": "Versuche deine Filter anzupassen",
+    "scrollMore": "Scrolle fur mehr Designs...",
+    "categories": {
+      "all": "Alle",
+      "apparel": "Kleidung",
+      "mugs": "Tassen",
+      "posters": "Poster",
+      "phoneCases": "Hullen"
+    },
+    "styles": {
+      "allStyles": "Alle Stile",
+      "y2k": "Y2K",
+      "anime": "Anime",
+      "retro": "Retro",
+      "minimalist": "Minimalistisch",
+      "abstract": "Abstrakt"
+    },
+    "priceRanges": {
+      "all": "Alle Preise",
+      "under25": "Unter 25 $",
+      "range25to40": "25 $ - 40 $",
+      "over40": "Uber 40 $"
+    }
+  },
+  "Collections": {
+    "badge": "KI-kuratierte Kollektionen stundlich aktualisiert",
+    "heading": "Trendende Kollektionen",
+    "subtext": "Entdecke kuratierte Kollektionen der heissesten KI-generierten Designs, ausgewahlt von unserem Trend-Algorithmus.",
+    "exploreCollection": "Kollektion Entdecken",
+    "designs": "{count} Designs",
+    "sold": "{count} verkauft",
+    "by": "von",
+    "sortBy": "Sortieren nach:",
+    "sortOptions": {
+      "trending": "Trend",
+      "sales": "Verkaufe",
+      "newest": "Neueste"
+    },
+    "categories": {
+      "all": "Alle",
+      "apparel": "Kleidung",
+      "mugs": "Tassen",
+      "posters": "Poster",
+      "phoneCases": "Hullen"
+    }
+  },
+  "Studio": {
+    "heading": "Design-Studio",
+    "subtext": "Erstelle individuelle Designs mit KI. Wahle deinen Stil, dein Produkt und deine Farben, dann lass unsere KI die Magie wirken.",
+    "designPrompt": "Design-Beschreibung",
+    "promptPlaceholder": "Beschreibe deine Designidee... z.B. 'Eine Neon-Cyberpunk-Katze auf einem Skateboard durch eine Retro-Stadt bei Sonnenuntergang'",
+    "quickIdeas": "Schnelle Ideen:",
+    "ideas": {
+      "i1": "Vaporwave Sonnenuntergang",
+      "i2": "Kawaii Weltraumkatze",
+      "i3": "Glitch-Art Portrait",
+      "i4": "Drache in Neon-Stadt"
+    },
+    "style": "Stil",
+    "productType": "Produkttyp",
+    "colorPalette": "Farbpalette",
+    "generateDesign": "Design Generieren",
+    "aiGenerating": "KI Generiert Deine Designs...",
+    "livePreview": "Live-Vorschau",
+    "aiGenerated": "KI-Generiert",
+    "creatingMasterpiece": "KI erstellt dein Meisterwerk...",
+    "creatingWait": "Dies kann 10-20 Sekunden dauern",
+    "previewPlaceholder": "Dein KI-generiertes Design erscheint hier",
+    "previewHint": "Gib eine Beschreibung ein und klicke auf Generieren",
+    "palette": "{name} Palette",
+    "aiDesignVariants": "KI Design-Varianten",
+    "clickToPreview": "Klicken fur Vorschau",
+    "orderNow": "Jetzt Bestellen - {price} $",
+    "save": "Speichern",
+    "saved": "Gespeichert!",
+    "regenerate": "Mit Gleichen Einstellungen Regenerieren",
+    "errorMessage": "Designgenerierung fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "HowItWorks": {
+    "badge": "Von der Idee zum Produkt in Minuten, nicht Wochen",
+    "heading": "Wie",
+    "headingBrand": "TrendThread AI",
+    "headingEnd": "Funktioniert",
+    "subtext": "Wir haben die traditionelle Design-zu-Druck-Pipeline durch KI ersetzt. Das Ergebnis? 100x schneller, 10x gunstiger, unendlich kreativer.",
+    "step": "Schritt",
+    "steps": {
+      "s1": {
+        "title": "Beschreibe Deine Vision",
+        "description": "Schreibe jede Designidee in naturlicher Sprache. Unsere KI versteht komplexe Beschreibungen, Stile, Stimmungen und Asthetiken. Du kannst so spezifisch oder abstrakt sein, wie du mochtest.",
+        "details": ["Beschreibungen in naturlicher Sprache", "Stil- und Stimmungsschlusselworter", "Referenz auf bestehende Kunststile", "Mehrsprachige Unterstutzung"]
+      },
+      "s2": {
+        "title": "KI Generiert Designs",
+        "description": "Unser proprietares KI-Modell generiert 4 einzigartige Design-Varianten in unter 10 Sekunden. Jedes Design ist original, hochauflosend und druckfertig. Wahle deinen Favoriten oder generiere mehr.",
+        "details": ["4 einzigartige Varianten pro Generation", "Hochauflosende Vektorausgabe", "Stilgenaue Ergebnisse", "Unbegrenzte Regenerierungen (Pro)"]
+      },
+      "s3": {
+        "title": "Premium-Druckproduktion",
+        "description": "Wir verwenden branchenfuhrenden DTG- und Sublimationsdruck. Jedes Produkt wird mit Premium-Materialien gefertigt und durchlauft eine Qualitatskontrolle vor dem Versand.",
+        "details": ["DTG- und Sublimationsdruck", "Premium-Stoffe und -Materialien", "Qualitatskontrolle", "Umweltfreundliche Tinten"]
+      },
+      "s4": {
+        "title": "Schneller Weltweiter Versand",
+        "description": "Dein individuelles Produkt wird innerhalb von 2-5 Werktagen versandt. Verfolge deine Bestellung in Echtzeit. Wir liefern in uber 180 Lander mit Express- und Standardoptionen.",
+        "details": ["2-5 Tage Produktion", "Uber 180 Lander", "Echtzeit-Tracking", "Expressversand verfugbar"]
+      }
+    },
+    "comparisonHeading": "Traditionelles POD vs",
+    "comparisonBrand": "TrendThread AI",
+    "comparisonSubtext": "Erfahre, warum Creator zu KI-gesteuertem Print on Demand wechseln.",
+    "comparisonFeature": "Merkmal",
+    "comparisonTraditional": "Traditionelles POD",
+    "comparison": {
+      "r1": { "feature": "Design-Erstellungszeit", "traditional": "2-5 Tage", "trendthread": "10 Sekunden" },
+      "r2": { "feature": "Design-Kosten", "traditional": "50-500 $+", "trendthread": "Kostenlos - 0,50 $" },
+      "r3": { "feature": "Design-Kenntnisse notig", "traditional": "Professionell", "trendthread": "Keine" },
+      "r4": { "feature": "Produktmockups", "traditional": "Manuelle Erstellung", "trendthread": "Sofortiges KI-Mockup" },
+      "r5": { "feature": "Lager erforderlich", "traditional": "Ja, im Voraus", "trendthread": "Kein Lager" },
+      "r6": { "feature": "Mindestbestellung", "traditional": "25-100 Einheiten", "trendthread": "1 Einheit" },
+      "r7": { "feature": "Time to Market", "traditional": "2-4 Wochen", "trendthread": "Minuten" }
+    },
+    "ctaHeading": "Bereit",
+    "ctaHighlight": "Loszulegen?",
+    "ctaSubtext": "Erstelle dein erstes KI-Design in 10 Sekunden. Kostenlos, keine Kreditkarte erforderlich.",
+    "ctaButton": "Design-Studio Offnen"
+  },
+  "Creators": {
+    "badge": "3,2M $+ an Creator ausgezahlt",
+    "heading": "Creator-Programm",
+    "subtext": "Verwandle deine Kreativitat in Einkommen. Designe mit KI, verkaufe weltweit und verdiene bis zu 20% Provision bei jedem Verkauf.",
+    "stats": {
+      "activeCreators": "Aktive Creator",
+      "totalPayouts": "Gesamtauszahlungen",
+      "avgMonthly": "Durchschn. Monatsverdienst",
+      "topCreator": "Top-Creator-Verdienst"
+    },
+    "commissionTiers": "Provisionsstufen",
+    "commissionSubtext": "Verdiene mehr, je mehr du verkaufst. Einfach.",
+    "tiers": {
+      "gold": { "name": "Gold", "requirement": "0-50 Verkaufe/Monat" },
+      "platinum": { "name": "Platin", "requirement": "51-200 Verkaufe/Monat" },
+      "diamond": { "name": "Diamant", "requirement": "200+ Verkaufe/Monat" }
+    },
+    "tierFeatures": {
+      "aiTools": "Zugang zu KI-Design-Tools",
+      "analytics": "Analyse-Dashboard",
+      "weeklyPayouts": "Wochentliche Auszahlungen",
+      "prioritySupport": "Prioritats-Support",
+      "featuredPlacement": "Hervorgehobene Platzierung",
+      "customStorefront": "Eigene Storefront"
+    },
+    "howToJoin": "So Trittst Du Bei",
+    "joinSteps": {
+      "s1": { "title": "Bewerben", "desc": "Fulle ein kurzes Bewerbungsformular aus. Die Genehmigung dauert unter 24 Stunden." },
+      "s2": { "title": "Erstellen", "desc": "Nutze unsere KI-Tools um tolle Designs zu generieren und Kollektionen aufzubauen." },
+      "s3": { "title": "Teilen", "desc": "Teile deine Designs auf Social Media, deinem Shop oder unserem Marktplatz." },
+      "s4": { "title": "Verdienen", "desc": "Verdiene Provisionen bei jedem Verkauf. Wochentliche Auszahlung uber PayPal oder Stripe." }
+    },
+    "calculator": {
+      "heading": "Verdienstrechner",
+      "subtext": "Sieh, wie viel du als TrendThread AI Creator verdienen konntest.",
+      "monthlyViews": "Monatliche Shop-Besuche",
+      "commissionTier": "Provisionsstufe",
+      "estSales": "Gesch. Verkaufe",
+      "monthlyEarnings": "Monatsverdienst",
+      "annualEarnings": "Jahresverdienst",
+      "perMonth": "/Monat"
+    },
+    "stories": "Creator-Geschichten",
+    "topCreators": "Top Creator",
+    "designs": "Designs",
+    "followers": "Follower",
+    "earned": "Verdient:",
+    "applyNow": "Jetzt Bewerben",
+    "applySubtext": "Tritt unserer Creator-Community bei und fange heute an zu verdienen.",
+    "form": {
+      "fullName": "Vollstandiger Name",
+      "namePlaceholder": "Dein Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "du@email.de",
+      "socialMedia": "Social-Media-Profil",
+      "socialPlaceholder": "https://instagram.com/deinname",
+      "followerCount": "Follower-Anzahl",
+      "selectRange": "Bereich wahlen",
+      "range0to1k": "0 - 1.000",
+      "range1kto10k": "1.000 - 10.000",
+      "range10kto50k": "10.000 - 50.000",
+      "range50kto100k": "50.000 - 100.000",
+      "range100kPlus": "100.000+",
+      "niche": "Deine Nische",
+      "nichePlaceholder": "z.B. Mode, Gaming, Kunst, Fitness",
+      "submit": "Bewerbung Absenden"
+    },
+    "submitted": {
+      "title": "Bewerbung Eingereicht!",
+      "text": "Wir prufen deine Bewerbung und melden uns innerhalb von 24 Stunden. Prufe deine E-Mail fur die Bestatigung."
+    }
+  },
+  "Pricing": {
+    "heading": "Einfache,",
+    "headingHighlight": "Transparente",
+    "headingEnd": "Preise",
+    "subtext": "Starte kostenlos, upgrade wenn du bereit bist. Keine versteckten Gebuhren, keine Uberraschungen.",
+    "monthly": "Monatlich",
+    "annual": "Jahrlich",
+    "annualDiscount": "-20%",
+    "billedAnnually": "/Mo (jahrlich abgerechnet)",
+    "mostPopular": "Am Beliebtesten",
+    "plans": {
+      "free": {
+        "name": "Kostenlos",
+        "price": "0 $",
+        "period": "fur immer",
+        "description": "Perfekt zum Ausprobieren der KI-Design-Generierung.",
+        "features": [
+          "10 KI-Designs pro Tag",
+          "Standard-Qualitatsexport",
+          "5 Produkttypen",
+          "Basis-Stiloptionen",
+          "Community-Support",
+          "Standard-Versandtarife"
+        ],
+        "cta": "Kostenlos Starten"
+      },
+      "pro": {
+        "name": "Pro Creator",
+        "price": "29 $",
+        "period": "/Monat",
+        "description": "Fur Creator, die ein echtes Merch-Business aufbauen wollen.",
+        "features": [
+          "Unbegrenzte KI-Designs",
+          "HD-Qualitatsexport (4K)",
+          "Alle Produkttypen",
+          "Alle Stiloptionen + individuell",
+          "Prioritats-Support",
+          "Analyse-Dashboard",
+          "Creator-Marktplatz-Listing",
+          "10% Provisions-Boost",
+          "Wasserzeichen entfernen",
+          "Massengeneration (20 auf einmal)"
+        ],
+        "cta": "Pro Werden"
+      },
+      "business": {
+        "name": "Business",
+        "price": "99 $",
+        "period": "/Monat",
+        "description": "Fur Marken und Agenturen, die Print-on-Demand skalieren.",
+        "features": [
+          "Alles aus Pro Creator",
+          "White-Label-Branding",
+          "API-Zugang",
+          "Individuelle Verpackungsbeilagen",
+          "Dedizierter Account-Manager",
+          "Mengenrabatte (bis 40%)",
+          "Team-Accounts (5 Platze)",
+          "Erweiterte Analysen",
+          "Prioritats-Produktionswarteschlange",
+          "Individuelle Produkttypen"
+        ],
+        "cta": "Business Starten"
+      }
+    },
+    "bulkPricing": "Mengenpreise",
+    "bulkCalculator": "Rechner",
+    "bulkSubtext": "Bessere Preise bei hoheren Bestellmengen. Bis zu 40% Rabatt.",
+    "orderQuantity": "Bestellmenge",
+    "units": "Einheiten",
+    "off": "Rabatt",
+    "unitsPlus": "{count}+ Einheiten",
+    "perUnit": "Pro Stuck",
+    "discount": "Rabatt",
+    "total": "Gesamt",
+    "enterprise": {
+      "heading": "Enterprise",
+      "subtext": "Brauchst du individuelle Losungen fur deine Marke oder Agentur? 1.000+ Einheiten/Monat? Wir erstellen einen massgeschneiderten Plan fur dich.",
+      "emailPlaceholder": "du@unternehmen.de",
+      "contactSales": "Vertrieb Kontaktieren",
+      "contactSent": "Wir melden uns innerhalb von 24 Stunden!"
+    },
+    "faqHeading": "Haufig Gestellte",
+    "faqHighlight": "Fragen",
+    "faqs": {
+      "q1": { "q": "Wie funktioniert der KI-Design-Generator?", "a": "Gib einfach eine Beschreibung deiner Designidee ein, wahle einen Stil und Produkttyp, und unsere KI generiert vier einzigartige Designs in Sekunden. Du kannst sie dann anpassen, bestellen oder zu deinem Shop hinzufugen." },
+      "q2": { "q": "Wie ist die Druckqualitat?", "a": "Wir verwenden Premium DTG-Druck und hochwertige Sublimation fur alle Produkte. Die Farben sind lebendig, haltbar und waschbestandig. Jede Bestellung durchlauft eine Qualitatskontrolle vor dem Versand." },
+      "q3": { "q": "Wie lange dauert der Versand?", "a": "Standardversand dauert 5-8 Werktage innerhalb der USA. Expressversand (2-3 Tage) ist verfugbar. Internationale Bestellungen kommen in der Regel innerhalb von 10-15 Werktagen an." },
+      "q4": { "q": "Kann ich Designs verkaufen, die ich auf TrendThread AI erstelle?", "a": "Absolut! Tritt unserem Creator-Programm bei und verdiene 10-20% Provision bei jedem Verkauf. Du besitzt die kommerziellen Rechte an jedem Design, das du auf unserer Plattform generierst." },
+      "q5": { "q": "Gibt es ein Limit fur die Anzahl der Designs?", "a": "Kostenlose Accounts konnen bis zu 10 Designs pro Tag generieren. Pro Creator Accounts erhalten unbegrenzte Generierungen, und Business Accounts beinhalten Massengeneration-Tools." },
+      "q6": { "q": "Integriert ihr mit Shopify?", "a": "Ja! Unsere Shopify-Integration ermoglicht es dir, Designs mit einem Klick direkt in deinen Shopify-Shop zu ubertragen. Wir ubernehmen Druck, Verpackung und Versand automatisch." },
+      "q7": { "q": "Was, wenn ich mit meiner Bestellung nicht zufrieden bin?", "a": "Wir bieten eine 100% Zufriedenheitsgarantie. Bei Problemen mit der Druckqualitat oder Produktdefekten drucken wir nach oder erstatten deine Bestellung innerhalb von 30 Tagen." },
+      "q8": { "q": "Kann ich TrendThread AI fur meine bestehende Marke nutzen?", "a": "Ja! Business Accounts beinhalten White-Label-Optionen mit eigenem Branding, Verpackungsbeilagen und deinem Logo auf den Lieferscheinen." }
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Sprache"
+  },
+  "Common": {
+    "addedToCart": "{title} zum Warenkorb hinzugefugt!"
+  }
+}
